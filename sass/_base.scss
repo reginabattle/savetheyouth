@@ -22,7 +22,13 @@ h1, h2, h3 {
 h1 {
   font-size: 38px;
   line-height: 48px;
-  letter-spacing: 5px
+  letter-spacing: 4px
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: 2px;
 }
 
 a, i {
@@ -107,12 +113,6 @@ a, i {
 
 .video-details {
   margin-top: 15px;
-  text-align: center;
-
-  h1 {
-    font-size: 20px;
-    line-height: 28px;
-  }
 }
 
 .video-img {
@@ -122,10 +122,6 @@ a, i {
     display: block;
     width: 100%;
   }
-}
-
-.album-promo {
-  margin: 40px auto !important;
 }
 
 
@@ -154,7 +150,7 @@ a, i {
 
   i {
     color: $white;
-    font-size: 44px;
+    font-size: 6em
   }
 }
 

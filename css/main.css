@@ -90,10 +90,17 @@ h1, h2, h3 {
 h1 {
   font-size: 38px;
   line-height: 48px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 /* line 28, ../sass/_base.scss */
+h2 {
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+/* line 34, ../sass/_base.scss */
 a, i {
   outline: none;
   -moz-transition-property: all;
@@ -112,7 +119,7 @@ a, i {
 
 /* Header
 -----------------------------------------------*/
-/* line 39, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 .header-wrapper {
   background: #000000;
   position: fixed;
@@ -120,17 +127,17 @@ a, i {
   z-index: 999;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 52, ../sass/_base.scss */
 .header-inner {
   padding: 20px 0;
 }
-/* line 49, ../sass/_base.scss */
+/* line 55, ../sass/_base.scss */
 .header-inner a {
   color: #ffffff;
   text-transform: uppercase;
 }
 
-/* line 55, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 .site-title a {
   color: #ffffff;
   font-size: 22px;
@@ -140,12 +147,12 @@ a, i {
 
 /* Layout
 -----------------------------------------------*/
-/* line 66, ../sass/_base.scss */
+/* line 72, ../sass/_base.scss */
 .container {
   padding: 8em 0;
 }
 
-/* line 70, ../sass/_base.scss */
+/* line 76, ../sass/_base.scss */
 .section-header {
   font-weight: 700;
   margin-bottom: 5em;
@@ -153,7 +160,7 @@ a, i {
 
 /* Hero
 -----------------------------------------------*/
-/* line 78, ../sass/_base.scss */
+/* line 84, ../sass/_base.scss */
 .hero-wrapper {
   background-image: url("../images/capcom.jpg");
   background-repeat: none;
@@ -162,36 +169,30 @@ a, i {
   height: 100vh;
 }
 
-/* line 86, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 .hero-caption {
   color: #ffffff;
   margin-top: 5em;
 }
-/* line 90, ../sass/_base.scss */
+/* line 96, ../sass/_base.scss */
 .hero-caption h1 {
   color: #ffffff;
 }
-/* line 94, ../sass/_base.scss */
+/* line 100, ../sass/_base.scss */
 .hero-caption h2 {
   color: #ffffff;
 }
 
 /* Home Page Content
 -----------------------------------------------*/
-/* line 104, ../sass/_base.scss */
+/* line 110, ../sass/_base.scss */
 .video-entry {
   margin-bottom: 60px;
 }
 
-/* line 108, ../sass/_base.scss */
+/* line 114, ../sass/_base.scss */
 .video-details {
   margin-top: 15px;
-  text-align: center;
-}
-/* line 112, ../sass/_base.scss */
-.video-details h1 {
-  font-size: 20px;
-  line-height: 28px;
 }
 
 /* line 118, ../sass/_base.scss */
@@ -204,21 +205,16 @@ a, i {
   width: 100%;
 }
 
-/* line 127, ../sass/_base.scss */
-.album-promo {
-  margin: 40px auto !important;
-}
-
 /* Videos
 -----------------------------------------------*/
-/* line 135, ../sass/_base.scss */
+/* line 131, ../sass/_base.scss */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
 }
-/* line 141, ../sass/_base.scss */
+/* line 137, ../sass/_base.scss */
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -227,67 +223,67 @@ a, i {
   height: 100%;
 }
 
-/* line 150, ../sass/_base.scss */
+/* line 146, ../sass/_base.scss */
 .play-btn {
   position: absolute;
   top: 35%;
   left: 40%;
 }
-/* line 155, ../sass/_base.scss */
+/* line 151, ../sass/_base.scss */
 .play-btn i {
   color: #ffffff;
-  font-size: 44px;
+  font-size: 6em;
 }
 
 /* Footer
 -----------------------------------------------*/
-/* line 165, ../sass/_base.scss */
+/* line 161, ../sass/_base.scss */
 .footer-wrapper {
   background: #000000;
   position: relative;
 }
 
-/* line 170, ../sass/_base.scss */
+/* line 166, ../sass/_base.scss */
 .footer-inner {
   position: relative;
   padding: 15px 0;
 }
 
-/* line 175, ../sass/_base.scss */
+/* line 171, ../sass/_base.scss */
 .footer-menu {
   font-size: 14px;
   line-height: 24px;
   margin-top: 5px;
   text-align: center;
 }
-/* line 181, ../sass/_base.scss */
+/* line 177, ../sass/_base.scss */
 .footer-menu a {
   color: #ffffff;
   display: inline-block;
   margin: 0 5px;
   text-transform: uppercase;
 }
-/* line 187, ../sass/_base.scss */
+/* line 183, ../sass/_base.scss */
 .footer-menu a:before {
   background: #ffffff;
 }
-/* line 191, ../sass/_base.scss */
+/* line 187, ../sass/_base.scss */
 .footer-menu a:first-child {
   margin-left: 0;
 }
-/* line 195, ../sass/_base.scss */
+/* line 191, ../sass/_base.scss */
 .footer-menu a:last-child {
   margin-right: 0;
 }
 
 /* Misc
 -----------------------------------------------*/
-/* line 205, ../sass/_base.scss */
+/* line 201, ../sass/_base.scss */
 .row {
   width: 85%;
 }
 
-/* line 209, ../sass/_base.scss */
+/* line 205, ../sass/_base.scss */
 [class*=column] + [class*=column]:last-child {
   float: left;
 }
