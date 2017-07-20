@@ -1,0 +1,942 @@
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_base.scss */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/_base.scss */
+body {
+  color: #000000;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 16, ../sass/_base.scss */
+h1, h2, h3 {
+  font-family: "Sanchez", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 22, ../sass/_base.scss */
+h1 {
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 5px;
+}
+
+/* line 28, ../sass/_base.scss */
+a, i {
+  outline: none;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+/* Header
+-----------------------------------------------*/
+/* line 39, ../sass/_base.scss */
+.header-wrapper {
+  background: #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+/* line 46, ../sass/_base.scss */
+.header-inner {
+  padding: 20px 0;
+}
+/* line 49, ../sass/_base.scss */
+.header-inner a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* line 55, ../sass/_base.scss */
+.site-title a {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  display: inline-block;
+}
+
+/* Layout
+-----------------------------------------------*/
+/* line 66, ../sass/_base.scss */
+.container {
+  padding: 8em 0;
+}
+
+/* line 70, ../sass/_base.scss */
+.section-header {
+  font-weight: 700;
+  margin-bottom: 5em;
+}
+
+/* Hero
+-----------------------------------------------*/
+/* line 78, ../sass/_base.scss */
+.hero-wrapper {
+  background-image: url("../images/capcom.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: fixed;
+  height: 100vh;
+}
+
+/* line 86, ../sass/_base.scss */
+.hero-caption {
+  color: #ffffff;
+  margin-top: 5em;
+}
+/* line 90, ../sass/_base.scss */
+.hero-caption h1 {
+  color: #ffffff;
+}
+/* line 94, ../sass/_base.scss */
+.hero-caption h2 {
+  color: #ffffff;
+}
+
+/* Home Page Content
+-----------------------------------------------*/
+/* line 104, ../sass/_base.scss */
+.video-entry {
+  margin-bottom: 60px;
+}
+
+/* line 108, ../sass/_base.scss */
+.video-details {
+  margin-top: 15px;
+  text-align: center;
+}
+/* line 112, ../sass/_base.scss */
+.video-details h1 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* line 118, ../sass/_base.scss */
+.video-img {
+  position: relative;
+}
+/* line 121, ../sass/_base.scss */
+.video-img img {
+  display: block;
+  width: 100%;
+}
+
+/* line 127, ../sass/_base.scss */
+.album-promo {
+  margin: 40px auto !important;
+}
+
+/* Videos
+-----------------------------------------------*/
+/* line 135, ../sass/_base.scss */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+/* line 141, ../sass/_base.scss */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 150, ../sass/_base.scss */
+.play-btn {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+/* line 155, ../sass/_base.scss */
+.play-btn i {
+  color: #ffffff;
+  font-size: 44px;
+}
+
+/* Footer
+-----------------------------------------------*/
+/* line 165, ../sass/_base.scss */
+.footer-wrapper {
+  background: #000000;
+  position: relative;
+}
+
+/* line 170, ../sass/_base.scss */
+.footer-inner {
+  position: relative;
+  padding: 15px 0;
+}
+
+/* line 175, ../sass/_base.scss */
+.footer-menu {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 5px;
+  text-align: center;
+}
+/* line 181, ../sass/_base.scss */
+.footer-menu a {
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 5px;
+  text-transform: uppercase;
+}
+/* line 187, ../sass/_base.scss */
+.footer-menu a:before {
+  background: #ffffff;
+}
+/* line 191, ../sass/_base.scss */
+.footer-menu a:first-child {
+  margin-left: 0;
+}
+/* line 195, ../sass/_base.scss */
+.footer-menu a:last-child {
+  margin-right: 0;
+}
+
+/* Misc
+-----------------------------------------------*/
+/* line 205, ../sass/_base.scss */
+.row {
+  width: 85%;
+}
+
+/* line 209, ../sass/_base.scss */
+[class*=column] + [class*=column]:last-child {
+  float: left;
+}
+
+/* Remodal Necessary Styles
+--------------------------------------------*/
+/* Hide scroll bar */
+/* line 5, ../sass/components/_remodal.scss */
+html.remodal-is-locked {
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* Anti FOUC */
+/* line 12, ../sass/components/_remodal.scss */
+.remodal, [data-remodal-id] {
+  display: none;
+}
+
+/* Necessary styles of the overlay */
+/* line 17, ../sass/components/_remodal.scss */
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none;
+}
+
+/* Necessary styles of the wrapper */
+/* line 28, ../sass/components/_remodal.scss */
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 41, ../sass/components/_remodal.scss */
+.remodal-wrapper:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -.05em;
+  content: "";
+}
+
+/* Fix iPad, iPhone glitches */
+/* line 49, ../sass/components/_remodal.scss */
+.remodal-overlay, .remodal-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Necessary styles of the modal dialog */
+/* line 55, ../sass/components/_remodal.scss */
+.remodal {
+  position: relative;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* line 63, ../sass/components/_remodal.scss */
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: inline-block;
+}
+
+/* Remodal Default Theme
+--------------------------------------------*/
+/* line 71, ../sass/components/_remodal.scss */
+.remodal-bg.remodal-is-opening, .remodal-bg.remodal-is-opened {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+/* Default theme styles of the overlay */
+/* line 77, ../sass/components/_remodal.scss */
+.remodal-overlay {
+  background: rgba(43, 46, 56, 0.9);
+}
+
+/* line 81, ../sass/components/_remodal.scss */
+.remodal-overlay.remodal-is-opening, .remodal-overlay.remodal-is-closing {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 88, ../sass/components/_remodal.scss */
+.remodal-overlay.remodal-is-opening {
+  -webkit-animation-name: remodal-overlay-opening-keyframes;
+  animation-name: remodal-overlay-opening-keyframes;
+}
+
+/* line 93, ../sass/components/_remodal.scss */
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-name: remodal-overlay-closing-keyframes;
+  animation-name: remodal-overlay-closing-keyframes;
+}
+
+/* Default theme styles of the wrapper */
+/* line 99, ../sass/components/_remodal.scss */
+.remodal-wrapper {
+  padding: 10px 10px 0;
+}
+
+/* Default theme styles of the modal dialog */
+/* line 104, ../sass/components/_remodal.scss */
+.remodal {
+  box-sizing: border-box;
+  width: 100%;
+  /*height: 100%;*/
+  margin-bottom: 10px;
+  padding: 35px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: #2b2e38;
+}
+
+/* line 116, ../sass/components/_remodal.scss */
+.remodal.remodal-is-opening, .remodal.remodal-is-closing {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 123, ../sass/components/_remodal.scss */
+.remodal.remodal-is-opening {
+  -webkit-animation-name: remodal-opening-keyframes;
+  animation-name: remodal-opening-keyframes;
+}
+
+/* line 128, ../sass/components/_remodal.scss */
+.remodal.remodal-is-closing {
+  -webkit-animation-name: remodal-closing-keyframes;
+  animation-name: remodal-closing-keyframes;
+}
+
+/* Vertical align of the modal dialog */
+/* line 134, ../sass/components/_remodal.scss */
+.remodal, .remodal-wrapper:after {
+  vertical-align: middle;
+}
+
+/* Close button */
+/* line 139, ../sass/components/_remodal.scss */
+.remodal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  overflow: visible;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  text-decoration: none;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+/* line 159, ../sass/components/_remodal.scss */
+.remodal-close:hover, .remodal-close:focus {
+  color: #ffffff;
+}
+
+/* line 163, ../sass/components/_remodal.scss */
+.remodal-close:before {
+  font-family: 'Material Icons' !important;
+  font-size: 32px;
+  line-height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "\e5cd";
+  text-align: center;
+}
+
+/* Dialog buttons */
+/* line 176, ../sass/components/_remodal.scss */
+.remodal-confirm, .remodal-cancel {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  min-width: 110px;
+  margin: 0;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-transition: background .2s;
+  transition: background .2s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+}
+
+/* line 193, ../sass/components/_remodal.scss */
+.remodal-confirm {
+  color: #fff;
+  background: #81c784;
+}
+
+/* line 198, ../sass/components/_remodal.scss */
+.remodal-confirm:hover, .remodal-confirm:focus {
+  background: #66bb6a;
+}
+
+/* line 202, ../sass/components/_remodal.scss */
+.remodal-cancel {
+  color: #fff;
+  background: #e57373;
+}
+
+/* line 207, ../sass/components/_remodal.scss */
+.remodal-cancel:hover, .remodal-cancel:focus {
+  background: #ef5350;
+}
+
+/* Remove inner padding and border in Firefox 4+ for the button tag. */
+/* line 212, ../sass/components/_remodal.scss */
+.remodal-confirm::-moz-focus-inner, .remodal-cancel::-moz-focus-inner, .remodal-close::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* Keyframes
+   ========================================================================== */
+@-webkit-keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+  }
+}
+@keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* Media queries
+   ========================================================================== */
+@media only screen and (min-width: 641px) {
+  /* line 318, ../sass/components/_remodal.scss */
+  .remodal {
+    max-width: 90%;
+  }
+}
+/* IE8
+   ========================================================================== */
+/* line 325, ../sass/components/_remodal.scss */
+.lt-ie9 .remodal-overlay {
+  background: #2b2e38;
+}
+
+/* line 329, ../sass/components/_remodal.scss */
+.lt-ie9 .remodal {
+  width: 700px;
+}
+
+/*
+ * jQuery FlexSlider v2.6.1
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url(fonts/flexslider-icon.eot);
+  src: url(fonts/flexslider-icon.eot?#iefix) format("embedded-opentype"), url(fonts/flexslider-icon.woff) format("woff"), url(fonts/flexslider-icon.ttf) format("truetype"), url(fonts/flexslider-icon.svg#flexslider-icon) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Resets
+-----------------------------------------------*/
+/* line 25, ../sass/components/_flexslider.scss */
+.flex-container a:hover, .flex-slider a:hover {
+  outline: none;
+}
+
+/* line 29, ../sass/components/_flexslider.scss */
+.slides, .slides > li, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 35, ../sass/components/_flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Base Styles
+-----------------------------------------------*/
+/* line 41, ../sass/components/_flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 46, ../sass/components/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 51, ../sass/components/_flexslider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 56, ../sass/components/_flexslider.scss */
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 65, ../sass/components/_flexslider.scss */
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+/* line 69, ../sass/components/_flexslider.scss */
+* html .flexslider .slides {
+  height: 1%;
+}
+
+/* line 73, ../sass/components/_flexslider.scss */
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+/* Default Theme
+-----------------------------------------------*/
+/* line 79, ../sass/components/_flexslider.scss */
+.flexslider {
+  position: relative;
+  zoom: 1;
+}
+
+/* line 84, ../sass/components/_flexslider.scss */
+.flexslider .slides {
+  height: 100%;
+  zoom: 1;
+}
+
+/* line 89, ../sass/components/_flexslider.scss */
+.flexslider li {
+  height: 100%;
+}
+
+/* line 93, ../sass/components/_flexslider.scss */
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
+}
+
+/* line 98, ../sass/components/_flexslider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 107, ../sass/components/_flexslider.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 111, ../sass/components/_flexslider.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* line 115, ../sass/components/_flexslider.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 119, ../sass/components/_flexslider.scss */
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 134, ../sass/components/_flexslider.scss */
+.flex-direction-nav a:before {
+  content: '\e5cb';
+  color: #ffffff;
+  font-family: 'Material Icons';
+  font-size: 60px;
+  display: inline-block;
+}
+
+/* line 142, ../sass/components/_flexslider.scss */
+.flex-direction-nav a.flex-next:before {
+  content: '\e5cc';
+}
+
+/* line 146, ../sass/components/_flexslider.scss */
+.flex-direction-nav .flex-prev {
+  left: 25px;
+}
+
+/* line 150, ../sass/components/_flexslider.scss */
+.flex-direction-nav .flex-next {
+  right: 25px;
+  text-align: right;
+}
+
+/* line 155, ../sass/components/_flexslider.scss */
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: .6;
+}
+
+/* line 159, ../sass/components/_flexslider.scss */
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 163, ../sass/components/_flexslider.scss */
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: .6;
+}
+
+/* line 167, ../sass/components/_flexslider.scss */
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+
+/* line 171, ../sass/components/_flexslider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+
+/* line 178, ../sass/components/_flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+
+/* line 185, ../sass/components/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* Responsive
+-----------------------------------------------*/
+@media screen and (max-width: 860px) {
+  /* line 196, ../sass/components/_flexslider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  /* line 201, ../sass/components/_flexslider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+/* Small Desktop
+-----------------------------------------------------------*/
+/* Tablet
+-----------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  /* line 16, ../sass/_mobile.scss */
+  .row {
+    width: 100%;
+  }
+
+  /* line 20, ../sass/_mobile.scss */
+  [class*=column] + [class*=column]:last-child {
+    float: none;
+  }
+}
+/* Mobile
+-----------------------------------------------------------*/
+@media only screen and (max-width: 580px) {
+  /* line 32, ../sass/_mobile.scss */
+  .site-title,
+  .main-menu {
+    text-align: center;
+  }
+
+  /* line 37, ../sass/_mobile.scss */
+  .main-menu a {
+    margin: 0 5px;
+  }
+
+  /* line 41, ../sass/_mobile.scss */
+  .footer-menu {
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  /* line 47, ../sass/_mobile.scss */
+  .hero-caption {
+    top: 28%;
+  }
+  /* line 50, ../sass/_mobile.scss */
+  .hero-caption h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  /* line 56, ../sass/_mobile.scss */
+  .flex-direction-nav a {
+    top: 47%;
+  }
+
+  /* line 60, ../sass/_mobile.scss */
+  .flex-direction-nav .flex-prev {
+    left: 0;
+  }
+
+  /* line 64, ../sass/_mobile.scss */
+  .flex-direction-nav .flex-next {
+    right: 0;
+  }
+}

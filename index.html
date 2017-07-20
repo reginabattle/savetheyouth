@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Sanchez" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/modernizr.js"></script>
+
+	<title>SAVETHEYOUTH</title>
+</head>
+
+<body>
+
+  <!-- Hero  -->
+  <section class="hero-wrapper">
+    <div class="row">
+
+      <div class="hero-caption five columns">
+        <h1>CAPCOM.</h1>
+      </div>
+
+    </div>
+  </section>
+  <!-- end hero -->
+
+  <main id="content" class="container row">
+
+    <!-- Video List -->
+    <section class="video-list twelve columns">
+
+      <header class="section-header twelve columns">
+        <h1>Videography</h1>
+      </header>
+
+      <!-- Entry -->
+      <article class="video-entry six columns">
+        <div class="video-img">
+          <img src="images/videos/video-remnants.png" alt="Remnants music video" />
+          <a class="play-btn" data-remodal-target="remnants" href="#"><i class="material-icons">play_circle_filled</i></a>
+        </div>
+
+        <div class="video-details twelve columns">
+          <h1>Remnants</h1>
+          <p>Music Video</p>
+        </div>
+      </article>
+      <!-- end entry -->
+
+      <!-- Entry -->
+      <article class="video-entry six columns">
+        <div class="video-img">
+          <img src="images/videos/video-residuum.png" alt="Residuum music video" />
+          <a class="play-btn" data-remodal-target="residuum" href="#"><i class="material-icons">play_circle_filled</i></a>
+        </div>
+
+        <div class="video-details">
+          <h1>Residuum</h1>
+          <p>Short Film</p>
+        </div>
+      </article>
+      <!-- end entry -->
+
+      <!-- Entry -->
+      <article class="video-entry six columns">
+        <div class="video-img">
+          <img src="images/videos/video-downfall.png" alt="Downfall music video" />
+          <a class="play-btn" data-remodal-target="downfall" href="#"><i class="material-icons">play_circle_filled</i></a>
+        </div>
+
+        <div class="video-details">
+          <h1>Downfall</h1>
+          <p>Short Film</p>
+        </div>
+      </article>
+      <!-- end entry -->
+
+    </section>
+    <!-- end list -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-wrapper">
+    <div class="footer-inner row">
+      
+      <nav class="footer-menu twelve columns">
+        <a href="http://www.facebook.com/48805669" target="_blank">Facebook</a>
+        <a href="https://twitter.com/afroshima" target="_blank">Twitter</a>
+        <a href="http://instagram.com/savetheyouth" target="_blank">Instagram</a>
+        <a href="http://soundcloud.com/savetheyouth" target="_blank">SoundCloud</a>
+      </nav>
+
+    </div>
+  </footer>  
+  <!-- end footer -->
+
+  <!-- Noir Modal -->
+  <div class="remodal modal-noir" data-remodal-id="noir">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Xe-VsSVZMi8" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!-- end modal -->
+
+  <!-- Remnants Modal -->
+  <div class="remodal modal-remnants" data-remodal-id="remnants">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    
+    <div class="video-wrapper">
+      <iframe id="video-remnants" src="https://player.vimeo.com/video/182383819?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+   
+  </div>
+  <!-- end modal -->
+
+  <!-- Residuum Modal -->
+  <div class="remodal modal-residuum" data-remodal-id="residuum">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    
+    <div class="video-wrapper">
+      <iframe id="video-residuum" src="https://player.vimeo.com/video/178897708?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+  <!-- end modal -->
+
+  <!-- Downfall Modal -->
+  <div class="remodal modal-downfall" data-remodal-id="downfall">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    
+    <div class="video-wrapper">
+      <iframe id="video-downfall" src="https://player.vimeo.com/video/180590490?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+  <!-- end modal -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.min.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+      $('.video-noir').vide({mp4: 'video/noir'}, {position: '0 50%',  posterType: 'png'});
+    });
+  </script>
+
+</body>
+</html>

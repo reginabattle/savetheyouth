@@ -1,0 +1,68 @@
+
+
+/* Small Desktop
+-----------------------------------------------------------*/
+
+@media only screen and (max-width:1024px) {
+
+
+} 
+
+
+/* Tablet
+-----------------------------------------------------------*/
+
+@media only screen and (max-width:767px) {
+	.row {
+		width: 100%;
+	}
+
+	[class*=column]+[class*=column]:last-child {
+    float: none;
+	}	
+} 
+
+
+
+/* Mobile
+-----------------------------------------------------------*/
+
+@media only screen and (max-width:580px) {
+
+	.site-title,
+	.main-menu {
+		text-align: center;
+	}
+
+	.main-menu a {
+		margin: 0 5px;
+	}
+
+	.footer-menu {
+	  font-size: 11px;
+	  line-height: 18px;
+	  text-align: center;
+	}
+
+	.hero-caption {
+		top: 28%;
+
+		h1 {
+			font-size: 30px;
+			line-height: 36px;
+		}
+	}
+
+	.flex-direction-nav a {
+	  top: 47%;
+	}
+
+	.flex-direction-nav .flex-prev {
+	  left: 0;
+	}
+
+	.flex-direction-nav .flex-next {
+	  right: 0;
+	}
+	
+} 
