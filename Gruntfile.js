@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    'js/libs/*.js', 
+                    'js/vendor/*.js', 
                 ],
                 dest: 'js/scripts.js',
             }
