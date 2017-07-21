@@ -83,9 +83,10 @@ a, i {
 
 .hero-wrapper {
   background-image: url('../images/capcom.jpg');
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: fixed;
+  background-attachment: fixed;
+  background-position: center center;
   height: 100vh;
 }
 
