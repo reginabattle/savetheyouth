@@ -1,55 +1,3 @@
-
-/* Menu Toggle
-------------------------------------------------------------------*/
-$('#toggle').click(function() {
-  $(this).toggleClass('active');
-  $('#overlay').toggleClass('open');
-});
-
-
-/* Downfall Video
-------------------------------------------------------------------*/
-$(document).on('opened', '.modal-downfall', function () {
-  $("#video-downfall").vimeo("play");
-});
-
-
-$(document).on('closed', '.modal-downfall', function (e) {
-  $("#video-downfall").vimeo("unload");
-});
-
-
-/* Residuum Video
-------------------------------------------------------------------*/
-$(document).on('opened', '.modal-residuum', function () {
-  $("#video-residuum").vimeo("play");
-});
-
-$(document).on('closed', '.modal-residuum', function (e) {
-  $("#video-residuum").vimeo("unload");
-});
-
-
-/*  Remnants Video
-------------------------------------------------------------------*/
-$(document).on('opened', '.modal-remnants', function () {
-  $("#video-remnants").vimeo("play");
-});
-
-
-$(document).on('closed', '.modal-remnants', function (e) {
-  $("#video-remnants").vimeo("unload");
-});
-/*
- *  Remodal - v1.1.0
- *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
- *  http://vodkabears.github.io/remodal/
- *
- *  Made by Ilya Makarov
- *  Under MIT License
- */
-
-!function(a,b){"function"==typeof define&&define.amd?define(["jquery"],function(c){return b(a,c)}):"object"==typeof exports?b(a,require("jquery")):b(a,a.jQuery||a.Zepto)}(this,function(a,b){"use strict";function c(a){if(w&&"none"===a.css("animation-name")&&"none"===a.css("-webkit-animation-name")&&"none"===a.css("-moz-animation-name")&&"none"===a.css("-o-animation-name")&&"none"===a.css("-ms-animation-name"))return 0;var b,c,d,e,f=a.css("animation-duration")||a.css("-webkit-animation-duration")||a.css("-moz-animation-duration")||a.css("-o-animation-duration")||a.css("-ms-animation-duration")||"0s",g=a.css("animation-delay")||a.css("-webkit-animation-delay")||a.css("-moz-animation-delay")||a.css("-o-animation-delay")||a.css("-ms-animation-delay")||"0s",h=a.css("animation-iteration-count")||a.css("-webkit-animation-iteration-count")||a.css("-moz-animation-iteration-count")||a.css("-o-animation-iteration-count")||a.css("-ms-animation-iteration-count")||"1";for(f=f.split(", "),g=g.split(", "),h=h.split(", "),e=0,c=f.length,b=Number.NEGATIVE_INFINITY;e<c;e++)d=parseFloat(f[e])*parseInt(h[e],10)+parseFloat(g[e]),d>b&&(b=d);return b}function d(){if(b(document.body).height()<=b(window).height())return 0;var a,c,d=document.createElement("div"),e=document.createElement("div");return d.style.visibility="hidden",d.style.width="100px",document.body.appendChild(d),a=d.offsetWidth,d.style.overflow="scroll",e.style.width="100%",d.appendChild(e),c=e.offsetWidth,d.parentNode.removeChild(d),a-c}function e(){if(!x){var a,c,e=b("html"),f=k("is-locked");e.hasClass(f)||(c=b(document.body),a=parseInt(c.css("padding-right"),10)+d(),c.css("padding-right",a+"px"),e.addClass(f))}}function f(){if(!x){var a,c,e=b("html"),f=k("is-locked");e.hasClass(f)&&(c=b(document.body),a=parseInt(c.css("padding-right"),10)-d(),c.css("padding-right",a+"px"),e.removeClass(f))}}function g(a,b,c,d){var e=k("is",b),f=[k("is",u.CLOSING),k("is",u.OPENING),k("is",u.CLOSED),k("is",u.OPENED)].join(" ");a.$bg.removeClass(f).addClass(e),a.$overlay.removeClass(f).addClass(e),a.$wrapper.removeClass(f).addClass(e),a.$modal.removeClass(f).addClass(e),a.state=b,!c&&a.$modal.trigger({type:b,reason:d},[{reason:d}])}function h(a,d,e){var f=0,g=function(a){a.target===this&&f++},h=function(a){a.target===this&&0===--f&&(b.each(["$bg","$overlay","$wrapper","$modal"],function(a,b){e[b].off(r+" "+s)}),d())};b.each(["$bg","$overlay","$wrapper","$modal"],function(a,b){e[b].on(r,g).on(s,h)}),a(),0===c(e.$bg)&&0===c(e.$overlay)&&0===c(e.$wrapper)&&0===c(e.$modal)&&(b.each(["$bg","$overlay","$wrapper","$modal"],function(a,b){e[b].off(r+" "+s)}),d())}function i(a){a.state!==u.CLOSED&&(b.each(["$bg","$overlay","$wrapper","$modal"],function(b,c){a[c].off(r+" "+s)}),a.$bg.removeClass(a.settings.modifier),a.$overlay.removeClass(a.settings.modifier).hide(),a.$wrapper.hide(),f(),g(a,u.CLOSED,!0))}function j(a){var b,c,d,e,f={};for(a=a.replace(/\s*:\s*/g,":").replace(/\s*,\s*/g,","),b=a.split(","),e=0,c=b.length;e<c;e++)b[e]=b[e].split(":"),d=b[e][1],("string"==typeof d||d instanceof String)&&(d="true"===d||"false"!==d&&d),("string"==typeof d||d instanceof String)&&(d=isNaN(d)?d:+d),f[b[e][0]]=d;return f}function k(){for(var a=q,b=0;b<arguments.length;++b)a+="-"+arguments[b];return a}function l(){var a,c,d=location.hash.replace("#","");if(d){try{c=b('[data-remodal-id="'+d+'"]')}catch(e){}c&&c.length&&(a=b[p].lookup[c.data(p)],a&&a.settings.hashTracking&&a.open())}else n&&n.state===u.OPENED&&n.settings.hashTracking&&n.close()}function m(a,c){var d=b(document.body),e=d,f=this;f.settings=b.extend({},t,c),f.index=b[p].lookup.push(f)-1,f.state=u.CLOSED,f.$overlay=b("."+k("overlay")),null!==f.settings.appendTo&&f.settings.appendTo.length&&(e=b(f.settings.appendTo)),f.$overlay.length||(f.$overlay=b("<div>").addClass(k("overlay")+" "+k("is",u.CLOSED)).hide(),e.append(f.$overlay)),f.$bg=b("."+k("bg")).addClass(k("is",u.CLOSED)),f.$modal=a.addClass(q+" "+k("is-initialized")+" "+f.settings.modifier+" "+k("is",u.CLOSED)).attr("tabindex","-1"),f.$wrapper=b("<div>").addClass(k("wrapper")+" "+f.settings.modifier+" "+k("is",u.CLOSED)).hide().append(f.$modal),e.append(f.$wrapper),f.$wrapper.on("click."+q,'[data-remodal-action="close"]',function(a){a.preventDefault(),f.close()}),f.$wrapper.on("click."+q,'[data-remodal-action="cancel"]',function(a){a.preventDefault(),f.$modal.trigger(v.CANCELLATION),f.settings.closeOnCancel&&f.close(v.CANCELLATION)}),f.$wrapper.on("click."+q,'[data-remodal-action="confirm"]',function(a){a.preventDefault(),f.$modal.trigger(v.CONFIRMATION),f.settings.closeOnConfirm&&f.close(v.CONFIRMATION)}),f.$wrapper.on("click."+q,function(a){var c=b(a.target);c.hasClass(k("wrapper"))&&f.settings.closeOnOutsideClick&&f.close()})}var n,o,p="remodal",q=a.REMODAL_GLOBALS&&a.REMODAL_GLOBALS.NAMESPACE||p,r=b.map(["animationstart","webkitAnimationStart","MSAnimationStart","oAnimationStart"],function(a){return a+"."+q}).join(" "),s=b.map(["animationend","webkitAnimationEnd","MSAnimationEnd","oAnimationEnd"],function(a){return a+"."+q}).join(" "),t=b.extend({hashTracking:!0,closeOnConfirm:!0,closeOnCancel:!0,closeOnEscape:!0,closeOnOutsideClick:!0,modifier:"",appendTo:null},a.REMODAL_GLOBALS&&a.REMODAL_GLOBALS.DEFAULTS),u={CLOSING:"closing",CLOSED:"closed",OPENING:"opening",OPENED:"opened"},v={CONFIRMATION:"confirmation",CANCELLATION:"cancellation"},w=function(){var a=document.createElement("div").style;return void 0!==a.animationName||void 0!==a.WebkitAnimationName||void 0!==a.MozAnimationName||void 0!==a.msAnimationName||void 0!==a.OAnimationName}(),x=/iPad|iPhone|iPod/.test(navigator.platform);m.prototype.open=function(){var a,c=this;c.state!==u.OPENING&&c.state!==u.CLOSING&&(a=c.$modal.attr("data-remodal-id"),a&&c.settings.hashTracking&&(o=b(window).scrollTop(),location.hash=a),n&&n!==c&&i(n),n=c,e(),c.$bg.addClass(c.settings.modifier),c.$overlay.addClass(c.settings.modifier).show(),c.$wrapper.show().scrollTop(0),c.$modal.focus(),h(function(){g(c,u.OPENING)},function(){g(c,u.OPENED)},c))},m.prototype.close=function(a){var c=this;c.state!==u.OPENING&&c.state!==u.CLOSING&&(c.settings.hashTracking&&c.$modal.attr("data-remodal-id")===location.hash.substr(1)&&(location.hash="",b(window).scrollTop(o)),h(function(){g(c,u.CLOSING,!1,a)},function(){c.$bg.removeClass(c.settings.modifier),c.$overlay.removeClass(c.settings.modifier).hide(),c.$wrapper.hide(),f(),g(c,u.CLOSED,!1,a)},c))},m.prototype.getState=function(){return this.state},m.prototype.destroy=function(){var a,c=b[p].lookup;i(this),this.$wrapper.remove(),delete c[this.index],a=b.grep(c,function(a){return!!a}).length,0===a&&(this.$overlay.remove(),this.$bg.removeClass(k("is",u.CLOSING)+" "+k("is",u.OPENING)+" "+k("is",u.CLOSED)+" "+k("is",u.OPENED)))},b[p]={lookup:[]},b.fn[p]=function(a){var c,d;return this.each(function(e,f){d=b(f),null==d.data(p)?(c=new m(d,a),d.data(p,c.index),c.settings.hashTracking&&d.attr("data-remodal-id")===location.hash.substr(1)&&c.open()):c=b[p].lookup[d.data(p)]}),c},b(document).ready(function(){b(document).on("click","[data-remodal-target]",function(a){a.preventDefault();var c=a.currentTarget,d=c.getAttribute("data-remodal-target"),e=b('[data-remodal-id="'+d+'"]');b[p].lookup[e.data(p)].open()}),b(document).find("."+q).each(function(a,c){var d=b(c),e=d.data("remodal-options");e?("string"==typeof e||e instanceof String)&&(e=j(e)):e={},d[p](e)}),b(document).on("keydown."+q,function(a){n&&n.settings.closeOnEscape&&n.state===u.OPENED&&27===a.keyCode&&n.close()}),b(window).on("hashchange."+q,l)})});
 /*!
  * skrollr core
  *
@@ -1830,6 +1778,3 @@ $(document).on('closed', '.modal-remnants', function (e) {
 	}
 
 }(window, document));
-
-/*! vimeo-jquery-api 2016-05-05 */
-!function(a,b){var c={catchMethods:{methodreturn:[],count:0},init:function(b){console.log(b);var c,d,e;b.originalEvent.origin.match(/vimeo/gi)&&"data"in b.originalEvent&&(e="string"===a.type(b.originalEvent.data)?a.parseJSON(b.originalEvent.data):b.originalEvent.data,e&&(c=this.setPlayerID(e),c.length&&(d=this.setVimeoAPIurl(c),e.hasOwnProperty("event")&&this.handleEvent(e,c,d),e.hasOwnProperty("method")&&this.handleMethod(e,c,d))))},setPlayerID:function(b){return a("iframe[src*="+b.player_id+"]")},setVimeoAPIurl:function(a){return"http"!==a.attr("src").substr(0,4)?"https:"+a.attr("src").split("?")[0]:a.attr("src").split("?")[0]},handleMethod:function(a){this.catchMethods.methodreturn.push(a.value)},handleEvent:function(b,c,d){switch(b.event.toLowerCase()){case"ready":for(var e in a._data(c[0],"events"))e.match(/loadProgress|playProgress|play|pause|finish|seek|cuechange/)&&c[0].contentWindow.postMessage(JSON.stringify({method:"addEventListener",value:e}),d);if(c.data("vimeoAPICall")){for(var f=c.data("vimeoAPICall"),g=0;g<f.length;g++)c[0].contentWindow.postMessage(JSON.stringify(f[g].message),f[g].api);c.removeData("vimeoAPICall")}c.data("vimeoReady",!0),c.triggerHandler("ready");break;case"seek":c.triggerHandler("seek",[b.data]);break;case"loadprogress":c.triggerHandler("loadProgress",[b.data]);break;case"playprogress":c.triggerHandler("playProgress",[b.data]);break;case"pause":c.triggerHandler("pause");break;case"finish":c.triggerHandler("finish");break;case"play":c.triggerHandler("play");break;case"cuechange":c.triggerHandler("cuechange")}}},d=a.fn.vimeoLoad=function(){var b=a(this).attr("src"),c=!1;if("https:"!==b.substr(0,6)&&(b="http"===b.substr(0,4)?"https"+b.substr(4):"https:"+b,c=!0),null===b.match(/player_id/g)){c=!0;var d=-1===b.indexOf("?")?"?":"&",e=a.param({api:1,player_id:"vvvvimeoVideo-"+Math.floor(1e7*Math.random()+1).toString()});b=b+d+e}return c&&a(this).attr("src",b),this};jQuery(document).ready(function(){a("iframe[src*='vimeo.com']").each(function(){d.call(this)})}),a(["loadProgress","playProgress","play","pause","finish","seek","cuechange"]).each(function(b,d){jQuery.event.special[d]={setup:function(){var b=a(this).attr("src");if(a(this).is("iframe")&&b.match(/vimeo/gi)){var e=a(this);if("undefined"!=typeof e.data("vimeoReady"))e[0].contentWindow.postMessage(JSON.stringify({method:"addEventListener",value:d}),c.setVimeoAPIurl(a(this)));else{var f="undefined"!=typeof e.data("vimeoAPICall")?e.data("vimeoAPICall"):[];f.push({message:d,api:c.setVimeoAPIurl(e)}),e.data("vimeoAPICall",f)}}}}}),a(b).on("message",function(a){c.init(a)}),a.vimeo=function(a,d,e){var f={},g=c.catchMethods.methodreturn.length;if("string"==typeof d&&(f.method=d),void 0!==typeof e&&"function"!=typeof e&&(f.value=e),a.is("iframe")&&f.hasOwnProperty("method"))if(a.data("vimeoReady"))a[0].contentWindow.postMessage(JSON.stringify(f),c.setVimeoAPIurl(a));else{var h=a.data("vimeoAPICall")?a.data("vimeoAPICall"):[];h.push({message:f,api:c.setVimeoAPIurl(a)}),a.data("vimeoAPICall",h)}return"get"!==d.toString().substr(0,3)&&"paused"!==d.toString()||"function"!=typeof e||(!function(a,d,e){var f=b.setInterval(function(){c.catchMethods.methodreturn.length!=a&&(b.clearInterval(f),d(c.catchMethods.methodreturn[e]))},10)}(g,e,c.catchMethods.count),c.catchMethods.count++),a},a.fn.vimeo=function(b,c){return a.vimeo(this,b,c)}}(jQuery,window);
