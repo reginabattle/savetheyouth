@@ -73,10 +73,10 @@ body, html {
 /* line 8, ../sass/_base.scss */
 body {
   color: #000000;
-  font-family: "Droid Sans", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 26px;
 }
 
 /* line 16, ../sass/_base.scss */
@@ -95,7 +95,7 @@ h1 {
 
 /* line 28, ../sass/_base.scss */
 h2 {
-  font-size: 20px;
+  font-size: 28px;
   line-height: 38px;
   letter-spacing: 2px;
 }
@@ -149,18 +149,26 @@ a, i {
 -----------------------------------------------*/
 /* line 72, ../sass/_base.scss */
 .container {
-  padding: 8em 0;
+  padding: 5em 0;
+  position: relative;
 }
 
-/* line 76, ../sass/_base.scss */
+/* line 77, ../sass/_base.scss */
 .section-header {
   font-weight: 700;
-  margin-bottom: 5em;
+  margin-bottom: 8em;
+  text-align: center;
+}
+/* line 82, ../sass/_base.scss */
+.section-header h1 {
+  display: inline-block;
+  padding-bottom: 0.25em;
+  border-bottom: 4px solid #000000;
 }
 
 /* Hero
 -----------------------------------------------*/
-/* line 84, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 .hero-wrapper {
   background-image: url("../images/capcom.jpg");
   background-repeat: no-repeat;
@@ -170,37 +178,38 @@ a, i {
   height: 100vh;
 }
 
-/* line 93, ../sass/_base.scss */
+/* line 101, ../sass/_base.scss */
 .hero-caption {
   color: #ffffff;
   margin-top: 5em;
 }
-/* line 97, ../sass/_base.scss */
+/* line 105, ../sass/_base.scss */
 .hero-caption h1 {
   color: #ffffff;
 }
-/* line 101, ../sass/_base.scss */
+/* line 109, ../sass/_base.scss */
 .hero-caption h2 {
   color: #ffffff;
 }
 
 /* Home Page Content
 -----------------------------------------------*/
-/* line 111, ../sass/_base.scss */
+/* line 119, ../sass/_base.scss */
 .video-entry {
-  margin-bottom: 5em;
+  margin-bottom: 8em;
 }
 
-/* line 115, ../sass/_base.scss */
+/* line 123, ../sass/_base.scss */
 .video-details {
+  text-transform: uppercase;
   margin-top: 15px;
 }
 
-/* line 119, ../sass/_base.scss */
+/* line 128, ../sass/_base.scss */
 .video-img {
   position: relative;
 }
-/* line 122, ../sass/_base.scss */
+/* line 131, ../sass/_base.scss */
 .video-img img {
   display: block;
   width: 100%;
@@ -208,14 +217,14 @@ a, i {
 
 /* Videos
 -----------------------------------------------*/
-/* line 132, ../sass/_base.scss */
+/* line 141, ../sass/_base.scss */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
 }
-/* line 138, ../sass/_base.scss */
+/* line 147, ../sass/_base.scss */
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -224,67 +233,67 @@ a, i {
   height: 100%;
 }
 
-/* line 147, ../sass/_base.scss */
+/* line 156, ../sass/_base.scss */
 .play-btn {
   position: absolute;
   top: 35%;
   left: 40%;
 }
-/* line 152, ../sass/_base.scss */
+/* line 161, ../sass/_base.scss */
 .play-btn i {
   color: #ffffff;
-  font-size: 6em;
+  font-size: 5em;
 }
 
 /* Footer
 -----------------------------------------------*/
-/* line 162, ../sass/_base.scss */
+/* line 171, ../sass/_base.scss */
 .footer-wrapper {
   background: #000000;
   position: relative;
 }
 
-/* line 167, ../sass/_base.scss */
+/* line 176, ../sass/_base.scss */
 .footer-inner {
   position: relative;
   padding: 15px 0;
 }
 
-/* line 172, ../sass/_base.scss */
+/* line 181, ../sass/_base.scss */
 .footer-menu {
   font-size: 14px;
   line-height: 24px;
   margin-top: 5px;
   text-align: center;
 }
-/* line 178, ../sass/_base.scss */
+/* line 187, ../sass/_base.scss */
 .footer-menu a {
   color: #ffffff;
   display: inline-block;
   margin: 0 5px;
   text-transform: uppercase;
 }
-/* line 184, ../sass/_base.scss */
+/* line 193, ../sass/_base.scss */
 .footer-menu a:before {
   background: #ffffff;
 }
-/* line 188, ../sass/_base.scss */
+/* line 197, ../sass/_base.scss */
 .footer-menu a:first-child {
   margin-left: 0;
 }
-/* line 192, ../sass/_base.scss */
+/* line 201, ../sass/_base.scss */
 .footer-menu a:last-child {
   margin-right: 0;
 }
 
 /* Misc
 -----------------------------------------------*/
-/* line 202, ../sass/_base.scss */
+/* line 211, ../sass/_base.scss */
 .row {
   width: 85%;
 }
 
-/* line 206, ../sass/_base.scss */
+/* line 215, ../sass/_base.scss */
 [class*=column] + [class*=column]:last-child {
   float: left;
 }

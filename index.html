@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Sanchez" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Sanchez" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" href="css/foundation.css">
@@ -29,41 +29,40 @@
   </section>
   <!-- end hero -->
 
-  <main id="content" class="container row">
+  <main id="content" class="container">
 
     <!-- Video List -->
-    <section class="video-list twelve columns">
+    <section class="video-list row">
 
       <header class="section-header twelve columns">
         <h1>Videography</h1>
       </header>
 
       <!-- Entry -->
-      <article class="video-entry six columns">
-        <div class="video-img">
+      <article class="video-entry row">
+        <div class="video-details four columns">
+          <h2>Noir</h2>
+          <p>Music Video</p>
+        </div>
+        <figure class="video-img eight columns">
           <a data-remodal-target="noir" href="#">
             <img src="images/videos/noir.png" alt="Noir music video" />
             <span class="play-btn"><i class="material-icons">play_circle_filled</i></span>
           </a>
-        </div>
-
-        <div class="video-details">
-          <h2>Noir</h2>
-          <p>Music Video</p>
-        </div>
+        </figure>
       </article>
       <!-- end entry -->
 
       <!-- Entry -->
-      <article class="video-entry six columns">
-        <div class="video-img">
+      <article class="video-entry row">
+        <figure class="video-img eight columns">
           <a data-remodal-target="remnants" href="#">
             <img src="images/videos/remnants.png" alt="Remnants music video" />
             <span class="play-btn"><i class="material-icons">play_circle_filled</i></span>
           </a>
-        </div>
+        </figure>
 
-        <div class="video-details twelve columns">
+        <div class="video-details four columns">
           <h2>Remnants</h2>
           <p>Music Video</p>
         </div>
@@ -71,31 +70,29 @@
       <!-- end entry -->
 
       <!-- Entry -->
-      <article class="video-entry six columns">
-        <div class="video-img">
+      <article class="video-entry row">
+        <div class="video-details four columns">
+          <h2>Residuum</h2>
+          <p>Short Film</p>
+        </div>
+        <figure class="video-img eight columns">
           <a data-remodal-target="residuum" href="#">
             <img src="images/videos/residuum.png" alt="Residuum music video" />
             <span class="play-btn"><i class="material-icons">play_circle_filled</i>
           </a>
-        </div>
-
-        <div class="video-details">
-          <h2>Residuum</h2>
-          <p>Short Film</p>
-        </div>
+        </figure>
       </article>
       <!-- end entry -->
 
       <!-- Entry -->
-      <article class="video-entry six columns">
-        <div class="video-img">
+      <article class="video-entry row">
+        <figure class="video-img eight columns">
           <a data-remodal-target="downfall" href="#">
             <img src="images/videos/downfall.png" alt="Downfall music video" />
             <span class="play-btn"><i class="material-icons">play_circle_filled</i></span>
           </a>
-        </div>
-
-        <div class="video-details">
+        </figure>
+        <div class="video-details four columns">
           <h2>Downfall</h2>
           <p>Short Film</p>
         </div>
@@ -165,6 +162,9 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/scripts.min.js"></script>
+  <script type="text/javascript">
+  var s = skrollr.init();
+  </script>
   
 </body>
 </html>
