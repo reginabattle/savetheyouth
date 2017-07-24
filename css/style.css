@@ -95,7 +95,7 @@ h1 {
 
 /* line 28, ../sass/_base.scss */
 h2 {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 38px;
   letter-spacing: 2px;
 }
@@ -121,45 +121,42 @@ a, i {
 -----------------------------------------------*/
 /* line 45, ../sass/_base.scss */
 .header-wrapper {
-  background: #000000;
+  background: #ffffff;
   position: fixed;
   width: 100%;
   z-index: 999;
 }
 
 /* line 52, ../sass/_base.scss */
-.header-inner {
-  padding: 20px 0;
+.site-title {
+  text-align: center;
 }
 /* line 55, ../sass/_base.scss */
-.header-inner a {
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-/* line 61, ../sass/_base.scss */
 .site-title a {
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 26px;
+  color: #000000;
+  font-family: "Sanchez", serif;
+  font-size: 26px;
+  line-height: 36px;
   display: inline-block;
+  padding: 15px;
+  text-transform: uppercase;
 }
 
 /* Layout
 -----------------------------------------------*/
-/* line 72, ../sass/_base.scss */
+/* line 69, ../sass/_base.scss */
 .container {
   padding: 5em 0;
   position: relative;
 }
 
-/* line 77, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 .section-header {
   font-weight: 700;
   margin-bottom: 8em;
   text-align: center;
 }
-/* line 82, ../sass/_base.scss */
+/* line 79, ../sass/_base.scss */
 .section-header h1 {
   display: inline-block;
   padding-bottom: 0.25em;
@@ -168,7 +165,7 @@ a, i {
 
 /* Hero
 -----------------------------------------------*/
-/* line 92, ../sass/_base.scss */
+/* line 89, ../sass/_base.scss */
 .hero-wrapper {
   background-image: url("../images/capcom.jpg");
   background-repeat: no-repeat;
@@ -176,40 +173,42 @@ a, i {
   background-attachment: fixed;
   background-position: center center;
   height: 100vh;
+  padding-top: 66px;
 }
 
-/* line 101, ../sass/_base.scss */
+/* line 99, ../sass/_base.scss */
 .hero-caption {
   color: #ffffff;
   margin-top: 5em;
 }
-/* line 105, ../sass/_base.scss */
+/* line 103, ../sass/_base.scss */
 .hero-caption h1 {
   color: #ffffff;
 }
-/* line 109, ../sass/_base.scss */
+/* line 107, ../sass/_base.scss */
 .hero-caption h2 {
   color: #ffffff;
 }
 
 /* Home Page Content
 -----------------------------------------------*/
-/* line 119, ../sass/_base.scss */
+/* line 116, ../sass/_base.scss */
 .video-entry {
   margin-bottom: 8em;
 }
 
-/* line 123, ../sass/_base.scss */
+/* line 120, ../sass/_base.scss */
 .video-details {
+  text-align: center;
   text-transform: uppercase;
   margin-top: 15px;
 }
 
-/* line 128, ../sass/_base.scss */
+/* line 126, ../sass/_base.scss */
 .video-img {
   position: relative;
 }
-/* line 131, ../sass/_base.scss */
+/* line 129, ../sass/_base.scss */
 .video-img img {
   display: block;
   width: 100%;
@@ -217,14 +216,14 @@ a, i {
 
 /* Videos
 -----------------------------------------------*/
-/* line 141, ../sass/_base.scss */
+/* line 139, ../sass/_base.scss */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
 }
-/* line 147, ../sass/_base.scss */
+/* line 145, ../sass/_base.scss */
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -233,13 +232,13 @@ a, i {
   height: 100%;
 }
 
-/* line 156, ../sass/_base.scss */
+/* line 154, ../sass/_base.scss */
 .play-btn {
   position: absolute;
   top: 35%;
   left: 40%;
 }
-/* line 161, ../sass/_base.scss */
+/* line 159, ../sass/_base.scss */
 .play-btn i {
   color: #ffffff;
   font-size: 5em;
@@ -247,53 +246,44 @@ a, i {
 
 /* Footer
 -----------------------------------------------*/
-/* line 171, ../sass/_base.scss */
+/* line 169, ../sass/_base.scss */
 .footer-wrapper {
-  background: #000000;
   position: relative;
 }
 
-/* line 176, ../sass/_base.scss */
+/* line 173, ../sass/_base.scss */
 .footer-inner {
   position: relative;
   padding: 15px 0;
 }
 
-/* line 181, ../sass/_base.scss */
+/* line 178, ../sass/_base.scss */
 .footer-menu {
   font-size: 14px;
   line-height: 24px;
   margin-top: 5px;
   text-align: center;
 }
-/* line 187, ../sass/_base.scss */
+/* line 184, ../sass/_base.scss */
 .footer-menu a {
-  color: #ffffff;
+  color: #000000;
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 1em;
   text-transform: uppercase;
 }
-/* line 193, ../sass/_base.scss */
-.footer-menu a:before {
-  background: #ffffff;
-}
-/* line 197, ../sass/_base.scss */
-.footer-menu a:first-child {
-  margin-left: 0;
-}
-/* line 201, ../sass/_base.scss */
-.footer-menu a:last-child {
-  margin-right: 0;
+/* line 190, ../sass/_base.scss */
+.footer-menu a:hover {
+  border-bottom: 1px solid #000000;
 }
 
 /* Misc
 -----------------------------------------------*/
-/* line 211, ../sass/_base.scss */
+/* line 200, ../sass/_base.scss */
 .row {
   width: 85%;
 }
 
-/* line 215, ../sass/_base.scss */
+/* line 204, ../sass/_base.scss */
 [class*=column] + [class*=column]:last-child {
   float: left;
 }
