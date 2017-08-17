@@ -7,10 +7,14 @@
 //Variables
 @import "variables";
 
-// Global Styles
-@import "base";
+// Layout
+@import "layout/base";
+@import "layout/header";
+@import "layout/footer";
 
 // Components
+@import "components/hero";
+@import "components/video";
 @import "components/animate";
 @import "components/remodal";
 @import "components/flexslider";

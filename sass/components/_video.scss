@@ -1,0 +1,71 @@
+
+/* Videos
+-----------------------------------------------*/
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Video Grid
+-----------------------------------------------*/
+
+.video-entry {
+  margin-bottom: 6em;
+
+  a {
+    color: $white;
+    display: block;
+  }
+
+  &:last-child,
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
+/* Video Details
+-----------------------------------------------*/
+
+.video-details {
+  margin-top: 0.75em;
+}
+
+
+/* Video Screenshot
+-----------------------------------------------*/
+
+.video-img {
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Play Button
+-----------------------------------------------*/
+
+.play-btn {
+  position: absolute;
+  top: 36%;
+  left: 40%;
+
+  i {
+    color: $white;
+    font-size: 4.25em;
+    opacity: 0.75;
+  }
+}
+

@@ -1,0 +1,41 @@
+
+/* Footer
+-----------------------------------------------*/
+
+.footer-wrapper {
+  position: relative;
+}
+
+.footer-inner {
+  position: relative;
+  padding: 3em 0;
+}
+
+.footer-menu {
+  text-align: center;
+
+  a {
+    color: $white;
+    display: inline-block;
+    margin: 0 1em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  i {
+    font-size: 1.5em;
+    vertical-align: middle;
+  }
+}
+
+.footer-logo img {
+  display: block;
+  max-width: 100px;
+  margin: 0 auto 1.75em;
+}
