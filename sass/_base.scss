@@ -6,36 +6,39 @@ body, html {
 
 
 body {
-  color: $black;
+  background: $black;
+  color: $white;
   font-family: $body-font;
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.5;
 }
 
 h1, h2, h3 {
+  color: $white;
   font-family: $header-font;
   font-weight: 700;
-  text-transform: uppercase;
+
 }
 
 h1 {
-  font-size: 38px;
-  line-height: 48px;
-  letter-spacing: 4px
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 26px;
-  line-height: 38px;
-  letter-spacing: 2px;
+  font-size: 1.25em;
+  letter-spacing: 1px;
 }
 
 a, i {
   outline: none;
   @include transition-property(all);
   @include transition-duration(0.2s);
-  @include transition-timing-function(linear);
+  @include transition-timing-function(ease-in-out);
 }
 
 
@@ -43,25 +46,22 @@ a, i {
 -----------------------------------------------*/
 
 .header-wrapper {
-  background: $white;
   position: fixed;
   width: 100%;
-  z-index: 999;
-}
-
-.site-title {
   text-align: center;
-
-  a {
-    color: $black;
-    font-family: $header-font;
-    font-size: 26px;
-    line-height: 36px;
-    display: inline-block;
-    padding: 15px;
-    text-transform: uppercase;
-  }
+  z-index: 9999;
 }
+
+.site-title a {
+  color: $white;
+  font-family: $logo-font;
+  font-size: 1.75em;
+  font-weight: 700;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
 
 /* Layout
 -----------------------------------------------*/
@@ -73,13 +73,13 @@ a, i {
 
 .section-header {
   font-weight: 700;
-  margin-bottom: 8em;
+  margin-bottom: 6em;
   text-align: center;
 
   h1 {
     display: inline-block;
     padding-bottom: 0.25em;
-    border-bottom: 4px solid $black;
+    border-bottom: 2px solid $white;
   }
 }
 
@@ -93,43 +93,40 @@ a, i {
   background-attachment: fixed;
   background-position: center center;
   height: 100vh;
-  padding-top: 66px;
+  position: relative;;
 }
 
 .hero-caption {
   color: $white;
-  margin-top: 5em;
+  margin-top: 8em;
+  z-index: 100;
 
   h1 {
-    color: $white;
+    font-size: 3.25em;
+    line-height: 1;
   }
 
-  h2 {
-    color: $white;
+  .button {
+    margin-top: 1.75em;
   }
 }
 
-
-/* Home Page Content
------------------------------------------------*/
-
-.video-entry {
-  margin-bottom: 8em;
-}
-
-.video-details {
-  text-align: center;
+.sub-head {
+  display: inline-block;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+  text-indent: 4px;
   text-transform: uppercase;
-  margin-top: 15px;
 }
 
-.video-img {
-  position: relative;
-
-  img {
-    display: block;
-    width: 100%;
-  }
+.overlay {
+  background: rgba($black, 0.45);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
 }
 
 
@@ -151,14 +148,57 @@ a, i {
   }
 }
 
+.video-entry {
+  margin-bottom: 6em;
+  @include transition-property(all);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease-in-out);
+
+  a {
+    color: $white;
+    display: block;
+  }
+
+  a:hover {
+
+    .video-img img {
+      opacity: 1;
+    }
+
+    .play-btn i {
+      opacity: 1;
+    }
+  }
+
+  &:last-child,
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
+.video-details {
+  margin-top: 0.75em;
+}
+
+.video-img {
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    opacity: 0.75;
+  }
+}
+
 .play-btn {
   position: absolute;
-  top: 35%;
+  top: 36%;
   left: 40%;
 
   i {
     color: $white;
-    font-size: 5em
+    font-size: 4.25em;
+    opacity: 0.75;
   }
 }
 
@@ -172,7 +212,7 @@ a, i {
 
 .footer-inner {
   position: relative;
-  padding: 15px 0;
+  padding: 2em 0;
 }
 
 .footer-menu {
@@ -182,27 +222,51 @@ a, i {
   text-align: center;
 
   a {
-    color: $black;
+    color: $white;
     display: inline-block;
     margin: 0 1em;
     text-transform: uppercase;
 
     &:hover {
-      border-bottom: 1px solid $black;
+      border-bottom: 1px solid $white;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
+}
+
+.footer-logo img {
+  display: block;
+  max-width: 100px;
+  margin: 0 auto 1.75em;
 }
 
 
 /* Misc
 -----------------------------------------------*/
 
-.row {
-  width: 85%;
+.column, .columns {
+  padding: 0 25px;
 }
 
-[class*=column]+[class*=column]:last-child {
-  float: left;
+.button {
+  background: $white;
+  color: $black;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.75em 2em;
+  text-transform: uppercase;
+  @include border-radius(90px);
+}
+
+.row {
+  width: 85%;
 }
 
 

@@ -13,6 +13,7 @@
 -----------------------------------------------------------*/
 
 @media only screen and (max-width:767px) {
+
 	.row {
 		width: 100%;
 	}
@@ -29,6 +30,44 @@
 
 @media only screen and (max-width:580px) {
 
+	h1 {
+		font-size: 1.75em;
+	}
+
+	.hero-wrapper {
+		background-attachment: scroll;
+		height: 75vh;
+	}
+
+	.hero-caption {
+		margin-top: 5.5em;
+
+		h1 {
+			font-size: 2.25em;
+		}
+
+		.button {
+			margin-top: 1em;
+		}
+	}
+
+	.sub-head {
+		font-size: 1em;
+		margin-bottom: 0.25em;
+	}
+
+	.overlay {
+		height: 75vh;
+	}
+
+	.video-entry {
+		margin-bottom: 4.5em;
+
+	  &:nth-child(4) {
+	    margin-bottom: 4.5em;
+	  }
+	}
+
 	.site-title,
 	.main-menu {
 		text-align: center;
@@ -42,27 +81,10 @@
 	  font-size: 11px;
 	  line-height: 18px;
 	  text-align: center;
-	}
 
-	.hero-caption {
-		top: 28%;
-
-		h1 {
-			font-size: 30px;
-			line-height: 36px;
-		}
-	}
-
-	.flex-direction-nav a {
-	  top: 47%;
-	}
-
-	.flex-direction-nav .flex-prev {
-	  left: 0;
-	}
-
-	.flex-direction-nav .flex-next {
-	  right: 0;
+	  a {
+	  	margin: 0 0.75em;
+	  }
 	}
 	
 } 

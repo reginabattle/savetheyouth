@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Sanchez" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Nixie+One|Nothing+You+Could+Do" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" href="css/foundation.css">
@@ -20,9 +20,11 @@
   <!-- Header -->
   <header class="header-wrapper">
     <div class="row">
+      
       <div class="site-title twelve columns">
         <a href="index.html">Savetheyouth</a>
       </div>
+
     </div>
   </header>
   <!-- end header -->
@@ -32,10 +34,13 @@
     <div class="row">
 
       <div class="hero-caption five columns">
-        <h1>CAPCOM.</h1>
+        <span class="sub-head">New Single</span>
+        <h1>CAPCOM</h1>
+        <a class="button" href="#capcom">Listen Now</a>
       </div>
 
     </div>
+    <div class="overlay"></div>
   </section>
   <!-- end hero -->
 
@@ -49,63 +54,58 @@
       </header>
 
       <!-- Entry -->
-      <article class="video-entry row">
-        <div class="video-details four columns">
-          <h2>Noir</h2>
-          <p>Music Video</p>
-        </div>
-        <figure class="video-img eight columns">
-          <a data-remodal-target="noir" href="#">
+      <article class="video-entry six columns">
+        <a data-remodal-target="noir" href="#">
+          <figure class="video-img">
             <img src="images/videos/noir.png" alt="Noir music video" />
             <span class="play-btn"><i class="material-icons">play_circle_filled</i></span>
-          </a>
-        </figure>
+          </figure>
+          <figcaption class="video-details">
+            <h2>Noir</h2>
+          </figcaption>
+        </a>
       </article>
       <!-- end entry -->
 
       <!-- Entry -->
-      <article class="video-entry row">
-        <figure class="video-img eight columns">
-          <a data-remodal-target="remnants" href="#">
+      <article class="video-entry six columns">
+        <a data-remodal-target="remnants" href="#">
+          <figure class="video-img">
             <img src="images/videos/remnants.png" alt="Remnants music video" />
             <span class="play-btn"><i class="material-icons">play_circle_filled</i></span>
-          </a>
-        </figure>
-
-        <div class="video-details four columns">
-          <h2>Remnants</h2>
-          <p>Music Video</p>
-        </div>
+          </figure>
+          <figcaption class="video-details">
+            <h2>Remnants</h2>
+          </figcaption>
+        </a>
       </article>
       <!-- end entry -->
 
       <!-- Entry -->
-      <article class="video-entry row">
-        <div class="video-details four columns">
-          <h2>Residuum</h2>
-          <p>Short Film</p>
-        </div>
-        <figure class="video-img eight columns">
-          <a data-remodal-target="residuum" href="#">
+      <article class="video-entry six columns">
+        <a data-remodal-target="residuum" href="#">
+          <figure class="video-img">
             <img src="images/videos/residuum.png" alt="Residuum music video" />
-            <span class="play-btn"><i class="material-icons">play_circle_filled</i>
-          </a>
-        </figure>
+            <span class="play-btn"><i class="material-icons">play_circle_filled</i></span>
+          </figure>
+          <figcaption class="video-details">
+            <h2>Residuum</h2>
+          </figcaption>
+        </a>
       </article>
       <!-- end entry -->
 
       <!-- Entry -->
-      <article class="video-entry row">
-        <figure class="video-img eight columns">
-          <a data-remodal-target="downfall" href="#">
-            <img src="images/videos/downfall.png" alt="Downfall music video" />
-            <span class="play-btn"><i class="material-icons">play_circle_filled</i></span>
-          </a>
-        </figure>
-        <div class="video-details four columns">
-          <h2>Downfall</h2>
-          <p>Short Film</p>
-        </div>
+      <article class="video-entry six columns">
+        <a data-remodal-target="downfall" href="#">
+          <figure class="video-img">
+              <img src="images/videos/downfall.png" alt="Downfall music video" />
+              <span class="play-btn"><i class="material-icons">play_circle_filled</i></span>
+          </figure>
+          <figcaption class="video-details">
+            <h2>Downfall</h2>
+          </figcaption>
+        </a>
       </article>
       <!-- end entry -->
 
@@ -117,6 +117,10 @@
   <!-- Footer -->
   <footer class="footer-wrapper">
     <div class="footer-inner row">
+
+      <figure class="footer-logo three columns centered">
+        <img src="images/layout/logo.svg" alt="Logo"/>
+      </figure>
       
       <nav class="footer-menu twelve columns">
         <a href="http://www.facebook.com/48805669" target="_blank">Facebook</a>
@@ -128,6 +132,16 @@
     </div>
   </footer>  
   <!-- end footer -->
+
+  <!-- Capcom Modal -->
+  <div class="remodal modal-capcom" data-remodal-id="capcom">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    
+    <div class="video-wrapper">
+      <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/333644967&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+  </div>
+  <!-- end modal -->
 
   <!-- Noir Modal -->
   <div class="remodal modal-noir" data-remodal-id="noir">
@@ -172,9 +186,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/scripts.min.js"></script>
-  <script type="text/javascript">
-  var s = skrollr.init();
-  </script>
   
 </body>
 </html>
