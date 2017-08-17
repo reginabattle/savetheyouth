@@ -20,6 +20,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  
+  .flex-direction-nav .flex-prev {
+    left: -4em;
+  }
+
 }
 
 /* Caption
@@ -28,13 +33,19 @@
 .hero-caption {
   background: $black;
   color: $white;
-  padding: 3em 2.5em;
+  padding: 3em 2.25em;
   margin-top: 8em;
   z-index: 100;
 
   h1 {
-    font-size: 2.25em;
-    line-height: 1;
-    margin-bottom: 1em;
+    font-size: 2em;
+    line-height: 1.4;
+    margin-bottom: 0.75em;
+  }
+
+  span {
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 0.5em;
   }
 }

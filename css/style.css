@@ -83,7 +83,7 @@ body {
 /* line 17, ../sass/layout/_base.scss */
 h1, h2, h3 {
   color: #ffffff;
-  font-family: "Nixie One", serif;
+  font-family: "Cabin", sans-serif;
   font-weight: 700;
 }
 
@@ -92,17 +92,16 @@ h1 {
   font-size: 2.5em;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-/* line 32, ../sass/layout/_base.scss */
+/* line 31, ../sass/layout/_base.scss */
 h2 {
   font-size: 1.25em;
   letter-spacing: 1px;
 }
 
-/* line 37, ../sass/layout/_base.scss */
+/* line 36, ../sass/layout/_base.scss */
 a, i {
   outline: none;
   -moz-transition-property: all;
@@ -121,55 +120,40 @@ a, i {
 
 /* Grid
 -----------------------------------------------*/
-/* line 48, ../sass/layout/_base.scss */
+/* line 47, ../sass/layout/_base.scss */
 .column, .columns {
   padding: 0 1.5em;
 }
 
-/* line 52, ../sass/layout/_base.scss */
+/* line 51, ../sass/layout/_base.scss */
 .row {
   width: 85%;
 }
 
 /* Content
 -----------------------------------------------*/
-/* line 59, ../sass/layout/_base.scss */
+/* line 58, ../sass/layout/_base.scss */
 .container {
   padding: 5em 0;
   position: relative;
 }
 
-/* line 64, ../sass/layout/_base.scss */
+/* line 63, ../sass/layout/_base.scss */
 .section-header {
   font-weight: 700;
   margin-bottom: 6em;
   text-align: center;
 }
-/* line 69, ../sass/layout/_base.scss */
+/* line 68, ../sass/layout/_base.scss */
 .section-header h1 {
   display: inline-block;
   padding-bottom: 0.25em;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
 }
 
-/* line 76, ../sass/layout/_base.scss */
+/* line 75, ../sass/layout/_base.scss */
 .section-wrapper {
   padding: 5em 0;
-}
-
-/* Misc
------------------------------------------------*/
-/* line 84, ../sass/layout/_base.scss */
-.button {
-  background: #ffffff;
-  color: #000000;
-  font-weight: 700;
-  display: inline-block;
-  padding: 0.75em 2em;
-  text-transform: uppercase;
-  -moz-border-radius: 90px;
-  -webkit-border-radius: 90px;
-  border-radius: 90px;
 }
 
 /* Header
@@ -260,22 +244,32 @@ a, i {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* line 24, ../sass/components/_hero.scss */
+.hero.flexslider .flex-direction-nav .flex-prev {
+  left: -4em;
+}
 
 /* Caption
 -----------------------------------------------*/
-/* line 28, ../sass/components/_hero.scss */
+/* line 33, ../sass/components/_hero.scss */
 .hero-caption {
   background: #000000;
   color: #ffffff;
-  padding: 3em 2.5em;
+  padding: 3em 2.25em;
   margin-top: 8em;
   z-index: 100;
 }
-/* line 35, ../sass/components/_hero.scss */
+/* line 40, ../sass/components/_hero.scss */
 .hero-caption h1 {
-  font-size: 2.25em;
-  line-height: 1;
-  margin-bottom: 1em;
+  font-size: 2em;
+  line-height: 1.4;
+  margin-bottom: 0.75em;
+}
+/* line 46, ../sass/components/_hero.scss */
+.hero-caption span {
+  font-size: 1em;
+  display: inline-block;
+  margin-bottom: 0.5em;
 }
 
 /* Videos
@@ -3657,6 +3651,27 @@ html.remodal-is-locked {
 /* line 329, ../sass/components/_remodal.scss */
 .lt-ie9 .remodal {
   width: 700px;
+}
+
+/* Buttons
+-----------------------------------------------*/
+/* line 5, ../sass/components/_buttons.scss */
+.button {
+  background: none;
+  color: #ffffff;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.75em 2em;
+  border: 3px solid #ffffff;
+  text-transform: uppercase;
+  -moz-border-radius: 90px;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
+}
+/* line 15, ../sass/components/_buttons.scss */
+.button:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
 /*

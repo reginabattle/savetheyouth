@@ -16,7 +16,7 @@ body {
 
 h1, h2, h3 {
   color: $white;
-  font-family: $header-font;
+  font-family: $body-font;
   font-weight: 700;
 
 }
@@ -25,7 +25,6 @@ h1 {
   font-size: 2.5em;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -69,7 +68,7 @@ a, i {
   h1 {
     display: inline-block;
     padding-bottom: 0.25em;
-    border-bottom: 2px solid $white;
+    border-bottom: 4px solid $white;
   }
 }
 
@@ -77,19 +76,6 @@ a, i {
   padding: 5em 0;
 }
 
-
-/* Misc
------------------------------------------------*/
-
-.button {
-  background: $white;
-  color: $black;
-  font-weight: 700;
-  display: inline-block;
-  padding: 0.75em 2em;
-  text-transform: uppercase;
-  @include border-radius(90px);
-}
 
 
 

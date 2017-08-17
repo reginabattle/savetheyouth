@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Cabin|Nixie+One|Nothing+You+Could+Do" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Nothing+You+Could+Do" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" href="css/foundation.css">
@@ -37,13 +37,15 @@
         <ul class="slides">
           <li style="background-image:url('images/so-so.jpg');">
             <div class="hero-caption four columns">
-              <h1>So So (Freestyle)</h1>
+              <span>New Single</span>
+              <h1>So So Freestyle (feat. Nana B.)</h1>
               <a class="button" href="#">Listen Now</a> 
             </div>
           </li>
 
           <li style="background-image:url('images/capcom.jpg');">
             <div class="hero-caption four columns">
+              <span>New Single</span>
               <h1>Capcom</h1>
               <a class="button" href="#">Listen Now</a> 
             </div>
@@ -201,7 +203,8 @@
     $('.flexslider').flexslider({
       prevText: "",
       nextText: "",
-      controlNav: false
+      controlNav: false,
+      manualControls: ".flex-control-nav li",
     });
   });
   </script>
