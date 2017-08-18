@@ -3955,7 +3955,7 @@ html[xmlns] .flexslider .slides {
   -------------------------------*/
   /* line 17, ../sass/responsive/_mobile.scss */
   .container {
-    padding: 0;
+    padding: 5em 0 0;
   }
 
   /* Hero
@@ -3972,7 +3972,7 @@ html[xmlns] .flexslider .slides {
   }
   /* line 35, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav a {
-    bottom: 4.5em;
+    bottom: 3.5em;
   }
   /* line 39, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav .flex-prev {
@@ -3987,17 +3987,8 @@ html[xmlns] .flexslider .slides {
   .hero.flexslider .flex-direction-nav a:before {
     font-size: 40px;
   }
-  /* line 52, ../sass/responsive/_mobile.scss */
-  .hero.flexslider .button {
-    padding: 0.5em 0;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 2px solid #ffffff;
-    border-radius: 0;
-  }
 
-  /* line 62, ../sass/responsive/_mobile.scss */
+  /* line 53, ../sass/responsive/_mobile.scss */
   .hero-caption {
     background: #000000;
     margin-top: 0;
@@ -4006,42 +3997,55 @@ html[xmlns] .flexslider .slides {
     bottom: 3em;
     width: 100% !important;
   }
-  /* line 70, ../sass/responsive/_mobile.scss */
+  /* line 61, ../sass/responsive/_mobile.scss */
   .hero-caption h1 {
     font-size: 1.25em;
     max-width: 60%;
     margin-bottom: 0;
   }
+  /* line 67, ../sass/responsive/_mobile.scss */
+  .hero-caption .button {
+    padding: 0.5em 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 0;
+  }
+  /* line 76, ../sass/responsive/_mobile.scss */
+  .hero-caption span {
+    display: none;
+  }
 
   /* Videos 
   -------------------------------*/
-  /* line 80, ../sass/responsive/_mobile.scss */
+  /* line 84, ../sass/responsive/_mobile.scss */
   .video-entry {
     margin-bottom: 4.5em;
   }
-  /* line 83, ../sass/responsive/_mobile.scss */
+  /* line 87, ../sass/responsive/_mobile.scss */
   .video-entry:nth-child(4) {
     margin-bottom: 4.5em;
   }
 
-  /* line 88, ../sass/responsive/_mobile.scss */
+  /* line 92, ../sass/responsive/_mobile.scss */
   .play-btn {
     top: 34%;
   }
-  /* line 91, ../sass/responsive/_mobile.scss */
+  /* line 95, ../sass/responsive/_mobile.scss */
   .play-btn i {
     font-size: 5em;
   }
 
   /* Footer
   -------------------------------*/
-  /* line 99, ../sass/responsive/_mobile.scss */
+  /* line 103, ../sass/responsive/_mobile.scss */
   .footer-menu {
     font-size: 11px;
     line-height: 18px;
     text-align: center;
   }
-  /* line 104, ../sass/responsive/_mobile.scss */
+  /* line 108, ../sass/responsive/_mobile.scss */
   .footer-menu a {
     margin: 0 0.75em;
   }

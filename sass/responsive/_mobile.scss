@@ -15,7 +15,7 @@
 	-------------------------------*/
 
 	.container {
-		padding: 0;
+		padding: 5em 0 0;
 	}
 
 	/* Hero
@@ -33,7 +33,7 @@
 	  }
 
 	  .flex-direction-nav a {
-	  	bottom: 4.5em;
+	  	bottom: 3.5em;
 	  }
 
 		.flex-direction-nav .flex-prev {
@@ -47,15 +47,6 @@
 
 		.flex-direction-nav a:before {
 			font-size: 40px;
-		}
-
-		.button {
-			padding: 0.5em 0;
-			border-top: none;
-			border-right: none;
-			border-left: none;
-			border-bottom: 2px solid $white;
-			border-radius: 0;
 		}
 	}
 
@@ -71,6 +62,19 @@
 			font-size: 1.25em;
 	    max-width: 60%;
 	    margin-bottom: 0;
+		}
+
+		.button {
+			padding: 0.5em 0;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			border-bottom: 2px solid $white;
+			border-radius: 0;
+		}
+
+		span {
+			display: none;
 		}
 	}
 
