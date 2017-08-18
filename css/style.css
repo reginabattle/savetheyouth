@@ -97,11 +97,10 @@ h1 {
 
 /* line 31, ../sass/layout/_base.scss */
 h2 {
-  font-size: 1.25em;
-  letter-spacing: 1px;
+  font-size: 1.5em;
 }
 
-/* line 36, ../sass/layout/_base.scss */
+/* line 35, ../sass/layout/_base.scss */
 a, i {
   outline: none;
   -moz-transition-property: all;
@@ -120,38 +119,38 @@ a, i {
 
 /* Grid
 -----------------------------------------------*/
-/* line 47, ../sass/layout/_base.scss */
+/* line 46, ../sass/layout/_base.scss */
 .column, .columns {
   padding: 0 1.5em;
 }
 
-/* line 51, ../sass/layout/_base.scss */
+/* line 50, ../sass/layout/_base.scss */
 .row {
   width: 85%;
 }
 
 /* Content
 -----------------------------------------------*/
-/* line 58, ../sass/layout/_base.scss */
+/* line 57, ../sass/layout/_base.scss */
 .container {
   padding: 5em 0;
   position: relative;
 }
 
-/* line 63, ../sass/layout/_base.scss */
+/* line 62, ../sass/layout/_base.scss */
 .section-header {
   font-weight: 700;
   margin-bottom: 6em;
   text-align: center;
 }
-/* line 68, ../sass/layout/_base.scss */
+/* line 67, ../sass/layout/_base.scss */
 .section-header h1 {
   display: inline-block;
   padding-bottom: 0.25em;
   border-bottom: 4px solid #ffffff;
 }
 
-/* line 75, ../sass/layout/_base.scss */
+/* line 74, ../sass/layout/_base.scss */
 .section-wrapper {
   padding: 5em 0;
 }
@@ -245,27 +244,38 @@ a, i {
   background-attachment: fixed;
 }
 /* line 24, ../sass/components/_hero.scss */
+.hero.flexslider .flex-direction-nav a {
+  opacity: 1;
+  top: auto;
+  bottom: -0.5em;
+}
+/* line 30, ../sass/components/_hero.scss */
 .hero.flexslider .flex-direction-nav .flex-prev {
-  left: -4em;
+  right: 6em;
+  left: auto;
+}
+/* line 35, ../sass/components/_hero.scss */
+.hero.flexslider .flex-direction-nav .flex-next {
+  right: 1em;
 }
 
 /* Caption
 -----------------------------------------------*/
-/* line 33, ../sass/components/_hero.scss */
+/* line 44, ../sass/components/_hero.scss */
 .hero-caption {
-  background: #000000;
+  background: rgba(0, 0, 0, 0.9);
   color: #ffffff;
   padding: 3em 2.25em;
   margin-top: 8em;
   z-index: 100;
 }
-/* line 40, ../sass/components/_hero.scss */
+/* line 51, ../sass/components/_hero.scss */
 .hero-caption h1 {
   font-size: 2em;
   line-height: 1.4;
   margin-bottom: 0.75em;
 }
-/* line 46, ../sass/components/_hero.scss */
+/* line 57, ../sass/components/_hero.scss */
 .hero-caption span {
   font-size: 1em;
   display: inline-block;
@@ -310,16 +320,17 @@ a, i {
 -----------------------------------------------*/
 /* line 40, ../sass/components/_video.scss */
 .video-details {
-  margin-top: 0.75em;
+  margin-top: 1em;
+  text-align: center;
 }
 
 /* Video Screenshot
 -----------------------------------------------*/
-/* line 48, ../sass/components/_video.scss */
+/* line 49, ../sass/components/_video.scss */
 .video-img {
   position: relative;
 }
-/* line 51, ../sass/components/_video.scss */
+/* line 52, ../sass/components/_video.scss */
 .video-img img {
   display: block;
   width: 100%;
@@ -327,17 +338,16 @@ a, i {
 
 /* Play Button
 -----------------------------------------------*/
-/* line 60, ../sass/components/_video.scss */
+/* line 61, ../sass/components/_video.scss */
 .play-btn {
   position: absolute;
   top: 36%;
   left: 40%;
 }
-/* line 65, ../sass/components/_video.scss */
+/* line 66, ../sass/components/_video.scss */
 .play-btn i {
   color: #ffffff;
-  font-size: 4.25em;
-  opacity: 0.75;
+  font-size: 6em;
 }
 
 /*!
@@ -3861,7 +3871,7 @@ html[xmlns] .flexslider .slides {
 
 /* line 155, ../sass/components/_flexslider.scss */
 .flexslider:hover .flex-direction-nav .flex-prev {
-  opacity: .6;
+  opacity: 1;
 }
 
 /* line 159, ../sass/components/_flexslider.scss */
@@ -3871,7 +3881,7 @@ html[xmlns] .flexslider .slides {
 
 /* line 163, ../sass/components/_flexslider.scss */
 .flexslider:hover .flex-direction-nav .flex-next {
-  opacity: .6;
+  opacity: 1;
 }
 
 /* line 167, ../sass/components/_flexslider.scss */
@@ -3879,14 +3889,12 @@ html[xmlns] .flexslider .slides {
   opacity: 1;
 }
 
-/* line 171, ../sass/components/_flexslider.scss */
-.flex-direction-nav .flex-disabled {
+/*.flex-direction-nav .flex-disabled {
   opacity: 0 !important;
   filter: alpha(opacity=0);
   cursor: default;
   z-index: -1;
-}
-
+}*/
 /* line 178, ../sass/components/_flexslider.scss */
 .flex-control-nav {
   width: 100%;
@@ -3936,68 +3944,104 @@ html[xmlns] .flexslider .slides {
 /* Mobile
 -----------------------------------------------*/
 @media only screen and (max-width: 580px) {
-  /* line 7, ../sass/responsive/_mobile.scss */
-  h1 {
-    font-size: 1.75em;
+  /* Header
+  -------------------------------*/
+  /* line 10, ../sass/responsive/_mobile.scss */
+  .site-title a {
+    font-size: 1.5em;
   }
 
-  /* line 11, ../sass/responsive/_mobile.scss */
+  /* Content
+  -------------------------------*/
+  /* line 17, ../sass/responsive/_mobile.scss */
+  .container {
+    padding: 0;
+  }
+
+  /* Hero
+  -------------------------------*/
+  /* line 24, ../sass/responsive/_mobile.scss */
   .hero-wrapper {
+    padding-top: 2em;
+  }
+
+  /* line 30, ../sass/responsive/_mobile.scss */
+  .hero.flexslider .slides li {
+    background-position: center -8em;
     background-attachment: scroll;
-    height: 75vh;
+  }
+  /* line 35, ../sass/responsive/_mobile.scss */
+  .hero.flexslider .flex-direction-nav a {
+    bottom: 5.5em;
+  }
+  /* line 39, ../sass/responsive/_mobile.scss */
+  .hero.flexslider .flex-direction-nav .flex-prev {
+    right: 3em;
+    left: auto;
+  }
+  /* line 44, ../sass/responsive/_mobile.scss */
+  .hero.flexslider .flex-direction-nav .flex-next {
+    right: 0.25em;
+  }
+  /* line 48, ../sass/responsive/_mobile.scss */
+  .hero.flexslider .flex-direction-nav a:before {
+    font-size: 40px;
+  }
+  /* line 52, ../sass/responsive/_mobile.scss */
+  .hero.flexslider .button {
+    padding: 0.5em 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 0;
   }
 
-  /* line 16, ../sass/responsive/_mobile.scss */
+  /* line 62, ../sass/responsive/_mobile.scss */
   .hero-caption {
-    margin-top: 5.5em;
+    background: #000000;
+    margin-top: 0;
+    padding: 1.5em 1.5em 0;
+    position: absolute;
+    bottom: 3em;
+    width: 100% !important;
   }
-  /* line 19, ../sass/responsive/_mobile.scss */
+  /* line 70, ../sass/responsive/_mobile.scss */
   .hero-caption h1 {
-    font-size: 2.25em;
-  }
-  /* line 23, ../sass/responsive/_mobile.scss */
-  .hero-caption .button {
-    margin-top: 1em;
+    font-size: 1.25em;
+    max-width: 60%;
+    margin-bottom: 0;
   }
 
-  /* line 28, ../sass/responsive/_mobile.scss */
-  .sub-head {
-    font-size: 1em;
-    margin-bottom: 0.25em;
-  }
-
-  /* line 33, ../sass/responsive/_mobile.scss */
-  .overlay {
-    height: 75vh;
-  }
-
-  /* line 37, ../sass/responsive/_mobile.scss */
+  /* Videos 
+  -------------------------------*/
+  /* line 80, ../sass/responsive/_mobile.scss */
   .video-entry {
     margin-bottom: 4.5em;
   }
-  /* line 40, ../sass/responsive/_mobile.scss */
+  /* line 83, ../sass/responsive/_mobile.scss */
   .video-entry:nth-child(4) {
     margin-bottom: 4.5em;
   }
 
-  /* line 45, ../sass/responsive/_mobile.scss */
-  .site-title,
-  .main-menu {
-    text-align: center;
+  /* line 88, ../sass/responsive/_mobile.scss */
+  .play-btn {
+    top: 34%;
+  }
+  /* line 91, ../sass/responsive/_mobile.scss */
+  .play-btn i {
+    font-size: 5em;
   }
 
-  /* line 50, ../sass/responsive/_mobile.scss */
-  .main-menu a {
-    margin: 0 5px;
-  }
-
-  /* line 54, ../sass/responsive/_mobile.scss */
+  /* Footer
+  -------------------------------*/
+  /* line 99, ../sass/responsive/_mobile.scss */
   .footer-menu {
     font-size: 11px;
     line-height: 18px;
     text-align: center;
   }
-  /* line 59, ../sass/responsive/_mobile.scss */
+  /* line 104, ../sass/responsive/_mobile.scss */
   .footer-menu a {
     margin: 0 0.75em;
   }

@@ -20,9 +20,20 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  .flex-direction-nav a {
+    opacity: 1;
+    top: auto;
+    bottom: -0.5em;
+  }
   
   .flex-direction-nav .flex-prev {
-    left: -4em;
+    right: 6em;
+    left: auto;
+  }
+
+  .flex-direction-nav .flex-next {
+    right: 1em;
   }
 
 }
@@ -31,7 +42,7 @@
 -----------------------------------------------*/
 
 .hero-caption {
-  background: $black;
+  background: rgba($black,0.9);
   color: $white;
   padding: 3em 2.25em;
   margin-top: 8em;

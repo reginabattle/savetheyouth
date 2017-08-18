@@ -4,35 +4,78 @@
 
 @media only screen and (max-width:580px) {
 
-	h1 {
-		font-size: 1.75em;
+	/* Header
+	-------------------------------*/
+
+	.site-title a {
+		font-size: 1.5em;
 	}
+	
+	/* Content
+	-------------------------------*/
+
+	.container {
+		padding: 0;
+	}
+
+	/* Hero
+	-------------------------------*/
 
 	.hero-wrapper {
-		background-attachment: scroll;
-		height: 75vh;
+		padding-top: 2em;
 	}
 
-	.hero-caption {
-		margin-top: 5.5em;
+	.hero.flexslider {
 
-		h1 {
-			font-size: 2.25em;
+		.slides li {
+	    background-position: center -8em;
+	    background-attachment: scroll;
+	  }
+
+	  .flex-direction-nav a {
+	  	bottom: 5.5em;
+	  }
+
+		.flex-direction-nav .flex-prev {
+	    right: 3em;
+	    left: auto;
+	   }
+
+	  .flex-direction-nav .flex-next {
+		  right: 0.25em;
+		}
+
+		.flex-direction-nav a:before {
+			font-size: 40px;
 		}
 
 		.button {
-			margin-top: 1em;
+			padding: 0.5em 0;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			border-bottom: 2px solid $white;
+			border-radius: 0;
 		}
 	}
 
-	.sub-head {
-		font-size: 1em;
-		margin-bottom: 0.25em;
+	.hero-caption {
+		background: $black;
+		margin-top: 0;
+		padding: 1.5em 1.5em 0;
+		position: absolute;
+		bottom: 3em;
+    width: 100% !important;
+
+		h1 {
+			font-size: 1.25em;
+	    max-width: 60%;
+	    margin-bottom: 0;
+		}
 	}
 
-	.overlay {
-		height: 75vh;
-	}
+	/* Videos 
+	-------------------------------*/
 
 	.video-entry {
 		margin-bottom: 4.5em;
@@ -42,14 +85,16 @@
 	  }
 	}
 
-	.site-title,
-	.main-menu {
-		text-align: center;
-	}
+	.play-btn {
+		top: 34%;
 
-	.main-menu a {
-		margin: 0 5px;
-	}
+		i {
+	    font-size: 5em;
+	  }
+	 }
+
+	/* Footer
+	-------------------------------*/
 
 	.footer-menu {
 	  font-size: 11px;
