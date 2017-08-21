@@ -344,8 +344,8 @@ a, i {
 }
 /* line 66, ../sass/components/_video.scss */
 .play-btn i {
-  color: #ffffff;
-  font-size: 6em;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 4em;
 }
 
 /*!
