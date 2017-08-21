@@ -36,7 +36,7 @@ a, i {
   outline: none;
   @include transition-property(all);
   @include transition-duration(0.2s);
-  @include transition-timing-function(ease-in-out);
+  @include transition-timing-function(ease);
 }
 
 
@@ -50,6 +50,7 @@ a, i {
 .row {
   width: 85%;
 }
+
 
 /* Content
 -----------------------------------------------*/
@@ -74,7 +75,6 @@ a, i {
 .section-wrapper {
   padding: 5em 0;
 }
-
 
 
 
