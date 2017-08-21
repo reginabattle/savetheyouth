@@ -85,14 +85,14 @@ h1, h2, h3 {
   color: #ffffff;
   font-family: "Cabin", sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-/* line 24, ../sass/layout/_base.scss */
+/* line 25, ../sass/layout/_base.scss */
 h1 {
   font-size: 2.5em;
   font-weight: 700;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 
 /* line 31, ../sass/layout/_base.scss */
@@ -302,7 +302,7 @@ a, i {
 -----------------------------------------------*/
 /* line 23, ../sass/components/_video.scss */
 .video-entry {
-  margin-bottom: 10em;
+  margin-bottom: 8em;
 }
 /* line 26, ../sass/components/_video.scss */
 .video-entry a {
@@ -323,7 +323,7 @@ a, i {
 /* line 42, ../sass/components/_video.scss */
 .video-details span {
   display: inline-block;
-  margin: 0.25em 0 0;
+  margin: 0.35em 0 0;
 }
 
 /* Video Screenshot
