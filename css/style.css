@@ -3963,44 +3963,38 @@ html[xmlns] .flexslider .slides {
     font-size: 1.5em;
   }
 
-  /* Content
-  -------------------------------*/
-  /* line 17, ../sass/responsive/_mobile.scss */
-  .container {
-    padding: 5em 0 0;
-  }
-
   /* Hero
   -------------------------------*/
-  /* line 24, ../sass/responsive/_mobile.scss */
+  /* line 17, ../sass/responsive/_mobile.scss */
   .hero-wrapper {
+    height: auto;
     padding-top: 2em;
   }
 
-  /* line 30, ../sass/responsive/_mobile.scss */
+  /* line 24, ../sass/responsive/_mobile.scss */
   .hero.flexslider .slides li {
     background-position: center -8em;
     background-attachment: scroll;
   }
-  /* line 35, ../sass/responsive/_mobile.scss */
+  /* line 29, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav a {
     bottom: 3.5em;
   }
-  /* line 39, ../sass/responsive/_mobile.scss */
+  /* line 33, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav .flex-prev {
     right: 3.5em;
     left: auto;
   }
-  /* line 44, ../sass/responsive/_mobile.scss */
+  /* line 38, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav .flex-next {
     right: 0.75em;
   }
-  /* line 48, ../sass/responsive/_mobile.scss */
+  /* line 42, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav a:before {
     font-size: 40px;
   }
 
-  /* line 53, ../sass/responsive/_mobile.scss */
+  /* line 47, ../sass/responsive/_mobile.scss */
   .hero-caption {
     background: #000000;
     margin-top: 0;
@@ -4009,13 +4003,13 @@ html[xmlns] .flexslider .slides {
     bottom: 3em;
     width: 100% !important;
   }
-  /* line 61, ../sass/responsive/_mobile.scss */
+  /* line 55, ../sass/responsive/_mobile.scss */
   .hero-caption h1 {
     font-size: 1.25em;
     max-width: 60%;
     margin-bottom: 0;
   }
-  /* line 67, ../sass/responsive/_mobile.scss */
+  /* line 61, ../sass/responsive/_mobile.scss */
   .hero-caption .button {
     padding: 0.5em 0;
     border-top: none;
@@ -4024,42 +4018,42 @@ html[xmlns] .flexslider .slides {
     border-bottom: 2px solid #ffffff;
     border-radius: 0;
   }
-  /* line 76, ../sass/responsive/_mobile.scss */
+  /* line 70, ../sass/responsive/_mobile.scss */
   .hero-caption span {
     display: none;
   }
 
   /* Videos 
   -------------------------------*/
-  /* line 84, ../sass/responsive/_mobile.scss */
+  /* line 78, ../sass/responsive/_mobile.scss */
   .video-entry {
     margin-bottom: 4.5em;
   }
-  /* line 87, ../sass/responsive/_mobile.scss */
+  /* line 81, ../sass/responsive/_mobile.scss */
   .video-entry:nth-child(4) {
     margin-bottom: 4.5em;
   }
 
-  /* line 92, ../sass/responsive/_mobile.scss */
+  /* line 86, ../sass/responsive/_mobile.scss */
   .play-btn {
     position: absolute;
-    top: 40%;
-    left: 46%;
+    top: 35%;
+    left: 40%;
   }
-  /* line 97, ../sass/responsive/_mobile.scss */
+  /* line 91, ../sass/responsive/_mobile.scss */
   .play-btn i {
     font-size: 2.5em;
   }
 
   /* Footer
   -------------------------------*/
-  /* line 105, ../sass/responsive/_mobile.scss */
+  /* line 99, ../sass/responsive/_mobile.scss */
   .footer-menu {
     font-size: 11px;
     line-height: 18px;
     text-align: center;
   }
-  /* line 110, ../sass/responsive/_mobile.scss */
+  /* line 104, ../sass/responsive/_mobile.scss */
   .footer-menu a {
     margin: 0 0.75em;
   }
