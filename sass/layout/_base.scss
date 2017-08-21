@@ -36,7 +36,7 @@ a, i {
   outline: none;
   @include transition-property(all);
   @include transition-duration(0.2s);
-  @include transition-timing-function(ease);
+  @include transition-timing-function(ease-in-out);
 }
 
 
@@ -56,7 +56,6 @@ a, i {
 -----------------------------------------------*/
 
 .container {
-  padding: 5em 0;
   position: relative;
 }
 

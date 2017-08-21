@@ -90,12 +90,14 @@
 	}
 
 	.play-btn {
-		top: 34%;
+	  position: absolute;
+	  top: 40%;
+	  left: 46%;
 
-		i {
-	    font-size: 5em;
+	  i {
+	    font-size: 2.5em;
 	  }
-	 }
+	}
 
 	/* Footer
 	-------------------------------*/
