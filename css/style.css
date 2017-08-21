@@ -201,7 +201,7 @@ a, i {
 .footer-menu a {
   color: #ffffff;
   display: inline-block;
-  margin: 0 1em;
+  margin: 0 0.75em;
 }
 /* line 22, ../sass/layout/_footer.scss */
 .footer-menu a:first-child {
@@ -213,7 +213,7 @@ a, i {
 }
 /* line 31, ../sass/layout/_footer.scss */
 .footer-menu i {
-  font-size: 1.5em;
+  font-size: 1.25em;
   vertical-align: middle;
 }
 
@@ -302,7 +302,7 @@ a, i {
 -----------------------------------------------*/
 /* line 23, ../sass/components/_video.scss */
 .video-entry {
-  margin-bottom: 6em;
+  margin-bottom: 10em;
 }
 /* line 26, ../sass/components/_video.scss */
 .video-entry a {
@@ -310,25 +310,29 @@ a, i {
   display: block;
 }
 /* line 31, ../sass/components/_video.scss */
-.video-entry:last-child, .video-entry:nth-child(4) {
+.video-entry:last-child {
   margin-bottom: 0;
 }
 
 /* Video Details
 -----------------------------------------------*/
-/* line 40, ../sass/components/_video.scss */
+/* line 39, ../sass/components/_video.scss */
 .video-details {
-  margin-top: 1em;
-  text-align: center;
+  margin-top: 1.25em;
+}
+/* line 42, ../sass/components/_video.scss */
+.video-details span {
+  display: inline-block;
+  margin: 0.25em 0 0;
 }
 
 /* Video Screenshot
 -----------------------------------------------*/
-/* line 49, ../sass/components/_video.scss */
+/* line 52, ../sass/components/_video.scss */
 .video-img {
   position: relative;
 }
-/* line 52, ../sass/components/_video.scss */
+/* line 55, ../sass/components/_video.scss */
 .video-img img {
   display: block;
   width: 100%;
@@ -336,16 +340,16 @@ a, i {
 
 /* Play Button
 -----------------------------------------------*/
-/* line 61, ../sass/components/_video.scss */
+/* line 64, ../sass/components/_video.scss */
 .play-btn {
   position: absolute;
-  top: 36%;
-  left: 40%;
+  top: 40%;
+  left: 46%;
 }
-/* line 66, ../sass/components/_video.scss */
+/* line 69, ../sass/components/_video.scss */
 .play-btn i {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 4em;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 6em;
 }
 
 /*!
