@@ -283,20 +283,20 @@ a, i {
 -----------------------------------------------*/
 /* line 5, ../sass/components/_audio.scss */
 .audio-player {
-  background: #000000;
+  background: #ffffff;
   display: none;
   position: absolute;
   bottom: 0;
-  padding: 1em 1.25em 1em 0.55em;
+  padding: 1.25em 1.25em 1.25em 0.55em;
   width: 100%;
 }
 /* line 13, ../sass/components/_audio.scss */
 .audio-player h1 {
   display: inline-block;
-  color: #ffffff;
+  color: #000000;
   font-size: 1em;
   line-height: 1;
-  margin-top: -0.55em;
+  margin-top: -0.65em;
   vertical-align: middle;
 }
 /* line 21, ../sass/components/_audio.scss */
@@ -309,8 +309,8 @@ a, i {
 }
 /* line 32, ../sass/components/_audio.scss */
 .audio-player a:hover .play-btn i {
-  color: #000000;
-  background: #ffffff;
+  color: #ffffff;
+  background: #000000;
 }
 /* line 38, ../sass/components/_audio.scss */
 .audio-player .play-btn {
@@ -320,10 +320,10 @@ a, i {
 }
 /* line 43, ../sass/components/_audio.scss */
 .audio-player .play-btn i {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.5em;
   padding: 0.15em;
-  border: 3px solid #ffffff;
+  border: 3px solid #000000;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
@@ -4022,39 +4022,42 @@ html[xmlns] .flexslider .slides {
   -------------------------------*/
   /* line 18, ../sass/responsive/_mobile.scss */
   .site-title a {
-    font-size: 1.35em;
-    padding: 0.75em 0;
+    display: inline-block;
+    font-size: 1.45em;
+    padding: 0.65em 0 0.5em;
+    vertical-align: middle;
   }
 
   /* Hero
   -------------------------------*/
-  /* line 26, ../sass/responsive/_mobile.scss */
+  /* line 28, ../sass/responsive/_mobile.scss */
   .hero-wrapper {
-    height: 100vh;
-    padding-top: 0em;
+    height: 90vh;
+    padding-top: 0;
   }
 
-  /* line 33, ../sass/responsive/_mobile.scss */
+  /* line 35, ../sass/responsive/_mobile.scss */
   .hero.flexslider .slides li {
     height: 90vh;
     background-position: center center;
     background-attachment: scroll;
   }
-  /* line 39, ../sass/responsive/_mobile.scss */
+  /* line 41, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav a {
-    bottom: 0.6em;
+    bottom: 1em;
   }
-  /* line 43, ../sass/responsive/_mobile.scss */
+  /* line 45, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav .flex-prev {
     right: 3.5em;
     left: auto;
   }
-  /* line 48, ../sass/responsive/_mobile.scss */
+  /* line 50, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav .flex-next {
     right: 0.75em;
   }
-  /* line 52, ../sass/responsive/_mobile.scss */
+  /* line 54, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav a:before {
+    color: #000000;
     font-size: 40px;
   }
 
@@ -4085,40 +4088,40 @@ html[xmlns] .flexslider .slides {
   			display: none;
   		}
   	}*/
-  /* line 85, ../sass/responsive/_mobile.scss */
+  /* line 88, ../sass/responsive/_mobile.scss */
   .hero-caption {
     display: none;
   }
 
-  /* line 89, ../sass/responsive/_mobile.scss */
+  /* line 92, ../sass/responsive/_mobile.scss */
   .audio-player {
     display: block;
   }
 
   /* Videos 
   -------------------------------*/
-  /* line 96, ../sass/responsive/_mobile.scss */
+  /* line 99, ../sass/responsive/_mobile.scss */
   .video-entry {
     margin-bottom: 4.5em;
   }
-  /* line 99, ../sass/responsive/_mobile.scss */
+  /* line 102, ../sass/responsive/_mobile.scss */
   .video-entry .play-btn {
     position: absolute;
     top: 35%;
     left: 40%;
   }
-  /* line 104, ../sass/responsive/_mobile.scss */
+  /* line 107, ../sass/responsive/_mobile.scss */
   .video-entry .play-btn i {
     font-size: 2.5em;
   }
-  /* line 109, ../sass/responsive/_mobile.scss */
+  /* line 112, ../sass/responsive/_mobile.scss */
   .video-entry:nth-child(4) {
     margin-bottom: 4.5em;
   }
 
   /* Footer
   -------------------------------*/
-  /* line 118, ../sass/responsive/_mobile.scss */
+  /* line 121, ../sass/responsive/_mobile.scss */
   .footer-inner {
     padding: 2em 0;
   }

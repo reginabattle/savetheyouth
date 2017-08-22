@@ -3,19 +3,19 @@
 -----------------------------------------------*/
 
 .audio-player {
-	background: $black;
+	background: $white;
 	display: none;
 	position: absolute;
   bottom: 0;
-  padding: 1em 1.25em 1em 0.55em;
+  padding: 1.25em 1.25em 1.25em 0.55em;
   width: 100%;
 
 	h1 {
 		display: inline-block;
-		color: $white;
+		color: $black;
 		font-size: 1em;
 		line-height: 1;
-    margin-top: -0.55em;
+    margin-top: -0.65em;
     vertical-align: middle;
 
 		span {
@@ -30,8 +30,8 @@
 	a:hover {
 
 		.play-btn i {
-			color: $black;
-			background: $white;
+			color: $white;
+			background: $black;
 		}
 	}
 
@@ -41,10 +41,10 @@
 		vertical-align: middle;
 	  
 	  i {
-	    color: $white;
+	    color: $black;
 	    font-size: 1.5em;
 	    padding: 0.15em;
-	    border: 3px solid $white;
+	    border: 3px solid $black;
 	    @include border-radius(100%);
 	  }
 	}
