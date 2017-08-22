@@ -27,6 +27,14 @@
 		}
 	}
 
+	a:hover {
+
+		.play-btn i {
+			color: $black;
+			background: $white;
+		}
+	}
+
 	.play-btn {
 		display: inline-block;
 		margin-right: 1em;

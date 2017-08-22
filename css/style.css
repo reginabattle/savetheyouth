@@ -307,13 +307,18 @@ a, i {
   line-height: 2;
   text-transform: none;
 }
-/* line 30, ../sass/components/_audio.scss */
+/* line 32, ../sass/components/_audio.scss */
+.audio-player a:hover .play-btn i {
+  color: #000000;
+  background: #ffffff;
+}
+/* line 38, ../sass/components/_audio.scss */
 .audio-player .play-btn {
   display: inline-block;
   margin-right: 1em;
   vertical-align: middle;
 }
-/* line 35, ../sass/components/_audio.scss */
+/* line 43, ../sass/components/_audio.scss */
 .audio-player .play-btn i {
   color: #ffffff;
   font-size: 1.5em;
