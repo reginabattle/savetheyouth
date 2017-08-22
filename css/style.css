@@ -4013,14 +4013,9 @@ html[xmlns] .flexslider .slides {
     font-size: 1em;
   }
 
-  /* line 15, ../sass/responsive/_mobile.scss */
-  .container {
-    padding: 2em 0 0;
-  }
-
   /* Header
   -------------------------------*/
-  /* line 22, ../sass/responsive/_mobile.scss */
+  /* line 18, ../sass/responsive/_mobile.scss */
   .site-title a {
     font-size: 1.35em;
     padding: 0.75em 0;
@@ -4028,32 +4023,32 @@ html[xmlns] .flexslider .slides {
 
   /* Hero
   -------------------------------*/
-  /* line 30, ../sass/responsive/_mobile.scss */
+  /* line 26, ../sass/responsive/_mobile.scss */
   .hero-wrapper {
     height: 100vh;
     padding-top: 0em;
   }
 
-  /* line 37, ../sass/responsive/_mobile.scss */
+  /* line 33, ../sass/responsive/_mobile.scss */
   .hero.flexslider .slides li {
-    height: 93vh;
+    height: 90vh;
     background-position: center center;
     background-attachment: scroll;
   }
-  /* line 43, ../sass/responsive/_mobile.scss */
+  /* line 39, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav a {
     bottom: 0.6em;
   }
-  /* line 47, ../sass/responsive/_mobile.scss */
+  /* line 43, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav .flex-prev {
     right: 3.5em;
     left: auto;
   }
-  /* line 52, ../sass/responsive/_mobile.scss */
+  /* line 48, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav .flex-next {
     right: 0.75em;
   }
-  /* line 56, ../sass/responsive/_mobile.scss */
+  /* line 52, ../sass/responsive/_mobile.scss */
   .hero.flexslider .flex-direction-nav a:before {
     font-size: 40px;
   }
@@ -4085,40 +4080,40 @@ html[xmlns] .flexslider .slides {
   			display: none;
   		}
   	}*/
-  /* line 89, ../sass/responsive/_mobile.scss */
+  /* line 85, ../sass/responsive/_mobile.scss */
   .hero-caption {
     display: none;
   }
 
-  /* line 93, ../sass/responsive/_mobile.scss */
+  /* line 89, ../sass/responsive/_mobile.scss */
   .audio-player {
     display: block;
   }
 
   /* Videos 
   -------------------------------*/
-  /* line 100, ../sass/responsive/_mobile.scss */
+  /* line 96, ../sass/responsive/_mobile.scss */
   .video-entry {
     margin-bottom: 4.5em;
   }
-  /* line 103, ../sass/responsive/_mobile.scss */
+  /* line 99, ../sass/responsive/_mobile.scss */
   .video-entry .play-btn {
     position: absolute;
     top: 35%;
     left: 40%;
   }
-  /* line 108, ../sass/responsive/_mobile.scss */
+  /* line 104, ../sass/responsive/_mobile.scss */
   .video-entry .play-btn i {
     font-size: 2.5em;
   }
-  /* line 113, ../sass/responsive/_mobile.scss */
+  /* line 109, ../sass/responsive/_mobile.scss */
   .video-entry:nth-child(4) {
     margin-bottom: 4.5em;
   }
 
   /* Footer
   -------------------------------*/
-  /* line 122, ../sass/responsive/_mobile.scss */
+  /* line 118, ../sass/responsive/_mobile.scss */
   .footer-inner {
     padding: 2em 0;
   }
