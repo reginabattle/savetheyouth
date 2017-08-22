@@ -7,36 +7,18 @@ $('#toggle').click(function() {
 });
 
 
-/* Downfall Video
+/* Video Modals
 ------------------------------------------------------------------*/
-$(document).on('opened', '.modal-downfall', function () {
-  $("#video-downfall").vimeo("play");
+
+// Play Vimeo video when modal is opened
+jQuery(document).on('opened', '.modal-vimeo', function () {
+	var iframe = jQuery( this ).find( 'iframe[src*="vimeo"]' )
+	jQuery(iframe).vimeo("play");
 });
 
-
-$(document).on('closed', '.modal-downfall', function (e) {
-  $("#video-downfall").vimeo("unload");
+// Pause Vimeo video when modal is closed
+jQuery(document).on('closed', '.modal-vimeo', function (e) {
+	var iframe = jQuery( this ).find( 'iframe[src*="vimeo"]' )
+	jQuery(iframe).vimeo("unload");
 });
 
-
-/* Residuum Video
-------------------------------------------------------------------*/
-$(document).on('opened', '.modal-residuum', function () {
-  $("#video-residuum").vimeo("play");
-});
-
-$(document).on('closed', '.modal-residuum', function (e) {
-  $("#video-residuum").vimeo("unload");
-});
-
-
-/*  Remnants Video
-------------------------------------------------------------------*/
-$(document).on('opened', '.modal-remnants', function () {
-  $("#video-remnants").vimeo("play");
-});
-
-
-$(document).on('closed', '.modal-remnants', function (e) {
-  $("#video-remnants").vimeo("unload");
-});
